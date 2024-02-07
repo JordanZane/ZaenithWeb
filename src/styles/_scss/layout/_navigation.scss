@@ -22,27 +22,31 @@
         position: relative;
         cursor: pointer;
         .bar {
-          width: 30px;
+          width: 20px;
           height: 2px;
           background: $gradient-primay;
           position: absolute;
+          @include transition(0.6s);
         }
         #bar1 {
           top: 0;
           &.open {
             top: 10px;
+            transform: rotate(125deg);
           }
         }
         #bar2 {
-          top: 10px;
+          top: 8px;
           &.open {
             top: 10px;
+            transform: rotate(50deg);
           }
         }
         #bar3 {
-          top: 20px;
+          top: 16px;
           &.open {
             top: 10px;
+            width: 0;
           }
         }
       }
@@ -57,10 +61,53 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  transform: translate(-100%, 0);
+  transform: translate(-110%, 0);
   background: $bg-color;
   @include transition(0.6s);
   &.show {
     transform: translate(0, 0);
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      @include transition(0.3s);
+      background: $bg-color;
+      position: relative;
+      border-bottom: 1px solid $color-grey;
+      padding: 20px 0 10px 150px;
+      &:last-child {
+        border-bottom: unset;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -120%;
+        width: 110%;
+        height: 100%;
+        background: $gradient-primay;
+        @include transition(0.5s);
+      }
+      &:hover {
+        &::before {
+          left: -15px;
+        }
+        a {
+          color: $color-black;
+        }
+      }
+      a {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        font-family: $font1;
+        font-size: $l-title-font-size;
+        @include transition(0.3s);
+        cursor: pointer;
+        z-index: 2;
+      }
+    }
   }
 }

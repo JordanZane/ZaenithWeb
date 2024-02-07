@@ -6,6 +6,10 @@ import Logo from '../../assets/images/logo-full.svg';
 const Navigation = () => {
   const handleShowNavigation = () => {
     document.getElementById('fullScreenNav').classList.toggle('show');
+    const barsMenu = document.getElementsByClassName('bar');
+    for (const bar of barsMenu) {
+      bar.classList.toggle('open');
+    }
   };
 
   return (

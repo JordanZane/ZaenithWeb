@@ -1,8 +1,10 @@
 body {
   font-family: $font2;
-  color: $color-black;
-  font-size: 50px;
+  color: $color-white;
+  font-size: $text-font-size;
   letter-spacing: 1px;
+  background: $bg-color;
+  scroll-behavior: smooth;
   @include respond-to('small') {
     font-size: 16px;
   }
@@ -81,11 +83,14 @@ body {
     }
   }
 
-  ul {
-    margin: 20px 0;
-    li {
-      margin: 10px 0;
-      list-style-position: inside;
-    }
+  .container {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .section {
+    padding: 0 200px;
+    margin-bottom: 280px;
   }
 }

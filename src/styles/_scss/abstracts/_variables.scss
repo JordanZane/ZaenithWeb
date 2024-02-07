@@ -12,10 +12,8 @@ $gradient-primay: linear-gradient(
 );
 
 /*Font sizes*/
-$golden-ratio: 1.61;
+$text-font-size: 19.3px;
+$s-title-font-size: 31px;
 $title-font-size: 50px;
-
-$l-title-font-size: calc(#{$title-font-size} * #{$golden-ratio});
-$xl-title-font-size: calc(#{$l-title-font-size} * #{$golden-ratio});
-$s-title-font-size: calc(#{$title-font-size} / #{$golden-ratio});
-$text-font-size: calc(#{$s-title-font-size} / #{$golden-ratio});
+$l-title-font-size: 80.5;
+$xl-title-font-size: 129.6px;

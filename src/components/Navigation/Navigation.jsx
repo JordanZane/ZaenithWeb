@@ -12,7 +12,7 @@ const Navigation = () => {
     if (fullScreenNav.classList.contains('show')) {
       setTimeout(() => {
         fullScreenNav.classList.toggle('show');
-      }, 1000);
+      }, 500);
 
       linkItems.forEach((link) => {
         link.classList.add('hide');
@@ -41,6 +41,7 @@ const Navigation = () => {
                 smooth={true}
                 offset={-100}
                 duration={100}
+                onClick={handleShowNavigation}
               >
                 <img src={Logo} alt="ZænithWeb - Freelance Web Developper" />
               </Link>

@@ -1,23 +1,26 @@
 body {
-  font-family: $font1;
-  color: $color-grey;
-  font-size: 14px;
+  font-family: $font2;
+  color: $color-black;
+  font-size: 50px;
   letter-spacing: 1px;
   @include respond-to('small') {
     font-size: 16px;
   }
-  .title {
-    margin-top: 50px;
-    margin-bottom: 30px;
+  .big-title {
+    font-size: 129.6;
   }
 
   h1 {
-    font-family: $font2;
+    font-family: $font1;
     font-weight: 700;
-    font-size: 40px;
+    font-size: $xl-title-font-size;
     line-height: 52px;
     position: relative;
     padding: 40px 0;
+    color: transparent;
+    background: $gradient-primay;
+    background-clip: text;
+    -webkit-background-clip: text;
 
     @include respond-to('medium') {
       font-size: 30px;
@@ -28,7 +31,7 @@ body {
   }
 
   h2 {
-    font-family: $font2;
+    font-family: $font1;
     font-size: 32px;
     font-weight: 700;
     line-height: 43px;
@@ -84,19 +87,5 @@ body {
       margin: 10px 0;
       list-style-position: inside;
     }
-  }
-}
-
-.seperator-right {
-  position: relative;
-  padding-right: 15px;
-  &:before {
-    background: $color-white;
-    height: 100%;
-    width: 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    content: '';
   }
 }

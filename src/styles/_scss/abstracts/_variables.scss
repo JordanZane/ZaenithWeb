@@ -1,6 +1,21 @@
-// couleur charte graphique //
-$color-black: rgb(0, 0, 0);
-$color-grey: rgb(7, 7, 7);
-$color-white: rgb(255, 255, 255);
+// graphic chart colors //
+$color-primary: #17f88c;
+$color-secondary: #1fecf9;
+$color-black: #000;
+$color-grey: #777;
+$color-white: #fff;
 
-$shadow-1: 0px 0px 5px rgba(0, 0, 0, 1);
+$gradient-primay: linear-gradient(
+  to bottom right,
+  $color-primary,
+  $color-secondary
+);
+
+/*Font sizes*/
+$golden-ratio: 1.61;
+$title-font-size: 50px;
+
+$l-title-font-size: calc(#{$title-font-size} * #{$golden-ratio});
+$xl-title-font-size: calc(#{$l-title-font-size} * #{$golden-ratio});
+$s-title-font-size: calc(#{$title-font-size} / #{$golden-ratio});
+$text-font-size: calc(#{$s-title-font-size} / #{$golden-ratio});

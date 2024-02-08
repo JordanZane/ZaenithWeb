@@ -41,7 +41,6 @@ const Navigation = () => {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                onClick={handleShowNavigation}
               >
                 <img src={Logo} alt="ZænithWeb - Freelance Web Developper" />
               </Link>

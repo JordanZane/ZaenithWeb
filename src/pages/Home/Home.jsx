@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
+import Header from '../../components/Sections/Header';
+
 const Home = () => {
   return (
-    <div id="home">
-      <h1>Home</h1>
+    <div className="home">
+      <Header />
     </div>
   );
 };

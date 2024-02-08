@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import BigLogo from '../../assets/images/big-logo-icon.svg';
 
 const Header = () => {
@@ -21,9 +23,16 @@ const Header = () => {
             esprits et favorisent la croissance de votre activité en ligne.
           </p>
           <div className="btn-container">
-            <a href="/" className="btn-style">
+            <Link
+              to="contact"
+              className="btn-style"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+            >
               Discutons de votre projet
-            </a>
+            </Link>
           </div>
         </div>
       </div>

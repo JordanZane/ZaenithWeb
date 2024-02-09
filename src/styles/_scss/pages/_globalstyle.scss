@@ -93,6 +93,16 @@ body {
     max-width: 1600px;
     width: 100%;
     margin: auto;
+    padding: 0 25px;
+    @include respond-to('desktops') {
+      max-width: 1200px;
+    }
+    @include respond-to('laptops') {
+      max-width: 600px;
+    }
+    @include respond-to('phones') {
+      max-width: 90%;
+    }
   }
 
   .section {

@@ -14,7 +14,7 @@
       @content;
     }
   } @else if $breakpoint == 'desktops' {
-    @media (max-width: 1799px) {
+    @media (max-width: 1600px) {
       @content;
     }
   } @else if $breakpoint == 'large' {

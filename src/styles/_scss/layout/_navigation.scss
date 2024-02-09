@@ -65,6 +65,9 @@
   transform: translate(-110%, 0);
   background: $bg-color;
   @include transition(0.5s);
+  @include respond-to('phones') {
+    transform: translate(-150%, 0);
+  }
   &.show {
     transform: translate(0, 0);
 

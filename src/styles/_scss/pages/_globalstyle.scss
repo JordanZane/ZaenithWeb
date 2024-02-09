@@ -37,10 +37,10 @@ body {
 
   h2 {
     font-family: $font1;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 700;
-    line-height: 43px;
-    padding: 32px 0 25px;
+    line-height: 1.3em;
+    margin: 0;
     @include respond-to('medium') {
       font-size: 25px;
     }
@@ -102,7 +102,26 @@ body {
   }
 
   .section {
-    padding: 200px 0;
+    padding: 125px 0;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      width: 100%;
+      height: 2px;
+      background: $gradient-primay;
+    }
+    h2 {
+      position: relative;
+      top: 15px;
+    }
   }
 }
 
@@ -150,4 +169,30 @@ body {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.green-blur-circle {
+  position: absolute;
+  left: -15%;
+  top: -15%;
+  width: 500px;
+  height: 500px;
+  background-color: $color-primary;
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 4;
+}
+
+.blue-blur-circle {
+  position: absolute;
+  right: -15%;
+  bottom: 24%;
+  width: 500px;
+  height: 500px;
+  background-color: $color-secondary;
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 4;
 }

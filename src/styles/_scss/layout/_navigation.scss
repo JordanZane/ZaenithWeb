@@ -1,9 +1,9 @@
 .navigation {
-  padding: 20px 0 0 0;
+  padding: 10px 0 3px 0;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 5;
   background-color: $bg-color;
   nav {
     display: flex;
@@ -15,7 +15,7 @@
     .menu-btn-container {
       display: flex;
       cursor: pointer;
-      padding-right: 30px;
+      padding-right: 21px;
       span {
         margin-right: 15px;
       }
@@ -30,21 +30,21 @@
           @include transition(0.6s);
         }
         #bar1 {
-          top: 0;
+          top: 3px;
           &.open {
             top: 10px;
             transform: rotate(125deg);
           }
         }
         #bar2 {
-          top: 8px;
+          top: 11px;
           &.open {
             top: 10px;
             transform: rotate(50deg);
           }
         }
         #bar3 {
-          top: 16px;
+          top: 19px;
           &.open {
             top: 10px;
             width: 0;

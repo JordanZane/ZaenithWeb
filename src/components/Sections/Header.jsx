@@ -6,6 +6,7 @@ import BigLogo from '../../assets/images/big-logo-icon.svg';
 const Header = () => {
   return (
     <header id="home">
+      <div className="green-blur-circle"></div>
       <div className="container">
         <div className="header-content">
           <h1>
@@ -37,6 +38,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className="blue-blur-circle"></div>
     </header>
   );
 };

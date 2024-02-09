@@ -4,9 +4,11 @@ const Works = () => {
   return (
     <section className="section" id="works">
       <div className="container">
-        <h2>Références</h2>
-        <div className="link-container">
-          <a href="/">Voir plus</a>
+        <div className="section-header">
+          <h2>Références</h2>
+          <div className="link-container">
+            <a href="/">Voir plus</a>
+          </div>
         </div>
       </div>
     </section>

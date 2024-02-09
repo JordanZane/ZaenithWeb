@@ -1,6 +1,7 @@
 header {
   position: relative;
   overflow: hidden;
+  padding-top: 200px;
   &::before {
     content: '';
     position: absolute;

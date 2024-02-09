@@ -6,18 +6,21 @@ import Logo from '../../assets/images/logo-full.svg';
 const Navigation = () => {
   const handleShowNavigation = () => {
     const fullScreenNav = document.getElementById('fullScreenNav');
+    const body = document.querySelector('body');
     const barsMenu = document.querySelectorAll('.bar');
     const linkItems = document.querySelectorAll('.link-item');
 
     if (fullScreenNav.classList.contains('show')) {
       setTimeout(() => {
         fullScreenNav.classList.toggle('show');
+        body.classList.toggle('no-scroll');
       }, 500);
 
       linkItems.forEach((link) => {
         link.classList.add('hide');
       });
     } else {
+      body.classList.toggle('no-scroll');
       fullScreenNav.classList.toggle('show');
       linkItems.forEach((link) => {
         link.classList.remove('hide');

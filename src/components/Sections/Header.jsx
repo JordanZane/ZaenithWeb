@@ -5,7 +5,7 @@ import BigLogo from '../../assets/images/big-logo-icon.svg';
 
 const Header = () => {
   return (
-    <header id="home" className="section">
+    <header id="home">
       <div className="container">
         <div className="header-content">
           <h1>

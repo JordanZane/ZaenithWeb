@@ -5,6 +5,7 @@ body {
   letter-spacing: 1px;
   background: $bg-color;
   scroll-behavior: smooth;
+  margin: 0;
   @include respond-to('small') {
     font-size: 16px;
   }
@@ -23,14 +24,14 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     margin: 0;
+    transform: translate(0, 30px);
+    opacity: 0;
+    animation: fadeUp 0.8s 0.3s linear forwards;
     @include respond-to('medium') {
       font-size: 30px;
     }
     @include respond-to('small') {
       font-size: 25px;
-    }
-    span {
-      color: $color-white;
     }
   }
 
@@ -95,7 +96,6 @@ body {
   }
 
   .section {
-    margin-bottom: 280px;
     padding: 200px 0;
   }
 }

@@ -1,17 +1,47 @@
 header {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    width: 500px;
+    height: 500px;
+    background-color: $color-primary;
+    filter: blur(100px);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 4;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: -15%;
+    bottom: 15%;
+    width: 500px;
+    height: 500px;
+    background-color: $color-secondary;
+    filter: blur(100px);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 4;
+  }
   .header-content {
     max-width: 950px;
-    &:hover {
-      .logo-container {
-        transform: rotate(14deg);
-      }
-    }
+
     h1 {
       display: flex;
       align-items: center;
       padding: 0;
       .logo-container {
         @include transition(0.3s);
+        transform: scale(0);
+        filter: blur(15px);
+        animation: appearScale 0.5s 1s linear forwards;
+      }
+      .second-title {
+        color: $color-white;
       }
     }
     p.subtitle {
@@ -20,15 +50,30 @@ header {
       position: relative;
       top: -15px;
       font-family: $font1;
+      animation: fadeUp 0.8s linear forwards;
+      opacity: 0;
       span {
         color: transparent;
         background: $gradient-primay;
         background-clip: text;
         -webkit-background-clip: text;
+        transform: translate(-100%, 0);
+        display: inline-block;
+        opacity: 0;
+        animation: fadeLeft 0.5s 0.9s linear forwards;
       }
     }
     .btn-container {
       margin-top: 60px;
+
+      .btn-style {
+        animation: appearScale 0.5s 2.1s linear forwards;
+        transform: scale(0);
+      }
+    }
+    p.intro {
+      opacity: 0;
+      animation: fadeUp 0.8s 1.3s linear forwards;
     }
   }
 }

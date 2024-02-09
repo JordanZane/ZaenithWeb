@@ -15,3 +15,38 @@
     transform: translate(-100%, 0);
   }
 }
+
+@keyframes fadeUp {
+  0% {
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translate(-100%, 0);
+    opacity: 0;
+    filter: blur(15px);
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes appearScale {
+  0% {
+    transform: scale(0);
+    filter: blur(15px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}

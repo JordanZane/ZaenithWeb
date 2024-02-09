@@ -26,7 +26,7 @@ body {
     margin: 0;
     transform: translate(0, 30px);
     opacity: 0;
-    animation: fadeUp 0.8s linear forwards;
+    animation: fadeUp 0.5s linear forwards;
     @include respond-to('medium') {
       font-size: 30px;
     }
@@ -91,17 +91,13 @@ body {
 
   .container {
     max-width: 1600px;
-    width: 100%;
     margin: auto;
     padding: 0 25px;
     @include respond-to('desktops') {
       max-width: 1200px;
     }
     @include respond-to('laptops') {
-      max-width: 600px;
-    }
-    @include respond-to('phones') {
-      max-width: 90%;
+      max-width: 1000px;
     }
   }
 

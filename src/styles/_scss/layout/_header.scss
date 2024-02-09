@@ -38,7 +38,7 @@ header {
         @include transition(0.3s);
         transform: scale(0);
         filter: blur(15px);
-        animation: appearScale 0.5s 1s linear forwards;
+        animation: appearScale 0.5s 0.6s linear forwards;
       }
       .second-title {
         color: $color-white;
@@ -50,7 +50,7 @@ header {
       position: relative;
       top: -15px;
       font-family: $font1;
-      animation: fadeUp 0.8s linear forwards;
+      animation: fadeUp 0.5s linear forwards;
       opacity: 0;
       span {
         color: transparent;
@@ -60,20 +60,20 @@ header {
         transform: translate(-100%, 0);
         display: inline-block;
         opacity: 0;
-        animation: fadeLeft 0.5s 0.9s linear forwards;
+        animation: fadeLeft 0.5s 0.6s linear forwards;
       }
     }
     .btn-container {
       margin-top: 60px;
 
       .btn-style {
-        animation: appearScale 0.5s 2.1s linear forwards;
+        animation: appearScale 0.5s 1.8s linear forwards;
         transform: scale(0);
       }
     }
     p.intro {
       opacity: 0;
-      animation: fadeUp 0.8s 1.3s linear forwards;
+      animation: fadeUp 0.8s 1s linear forwards;
     }
   }
 }

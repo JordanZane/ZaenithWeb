@@ -40,15 +40,18 @@ header {
     }
     .btn-container {
       margin-top: 60px;
-
       .btn-style {
         transform: scale(0);
-        animation: appearScale 0.5s 1.8s linear forwards;
+        &.show {
+          animation: appearScale 0.5s 0.8s linear forwards;
+        }
       }
     }
     p.intro {
       opacity: 0;
-      animation: fadeUp 0.8s 1.2s linear forwards;
+      &.show {
+        animation: fadeUp 0.8s 0.3s linear forwards;
+      }
     }
   }
 }

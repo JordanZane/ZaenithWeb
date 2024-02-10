@@ -16,10 +16,10 @@ const Header = () => {
               <img src={BigLogo} />
             </div>
           </h1>
-          <p className="subtitle ">
+          <p className="subtitle">
             Project your vision <span>into the web</span>
           </p>
-          <p className="intro ">
+          <p className="intro hidden">
             Transformons vos idées en réalité numérique. Projetez votre vision
             dans le web avec des sites vitrines et e-commerce qui marquent les
             esprits et favorisent la croissance de votre activité en ligne.
@@ -27,7 +27,7 @@ const Header = () => {
           <div className="btn-container">
             <Link
               to="contact"
-              className="btn-style"
+              className="btn-style hidden"
               spy={true}
               smooth={true}
               offset={-100}

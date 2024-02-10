@@ -24,8 +24,9 @@ header {
       position: relative;
       top: -15px;
       font-family: $font1;
-      animation: fadeUp 0.5s 0.2s linear forwards;
       opacity: 0;
+      animation: fadeUp 0.5s 0.2s linear forwards;
+
       span {
         color: transparent;
         background: $gradient-primay;
@@ -41,8 +42,8 @@ header {
       margin-top: 60px;
 
       .btn-style {
-        animation: appearScale 0.5s 1.8s linear forwards;
         transform: scale(0);
+        animation: appearScale 0.5s 1.8s linear forwards;
       }
     }
     p.intro {

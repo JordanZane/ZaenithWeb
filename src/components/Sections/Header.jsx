@@ -9,17 +9,17 @@ const Header = () => {
       <div className="green-blur-circle"></div>
       <div className="container">
         <div className="header-content">
-          <h1>
+          <h1 className="hidden">
             <span className="first-title">zænith</span>
             <span className="second-title">web</span>
-            <div className="logo-container">
+            <div className="logo-container ">
               <img src={BigLogo} />
             </div>
           </h1>
-          <p className="subtitle">
+          <p className="subtitle ">
             Project your vision <span>into the web</span>
           </p>
-          <p className="intro">
+          <p className="intro ">
             Transformons vos idées en réalité numérique. Projetez votre vision
             dans le web avec des sites vitrines et e-commerce qui marquent les
             esprits et favorisent la croissance de votre activité en ligne.

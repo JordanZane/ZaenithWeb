@@ -15,6 +15,7 @@ body {
 
   h1 {
     font-family: $font1;
+    letter-spacing: 0.1em;
     font-weight: 700;
     font-size: $xl-title-font-size;
     line-height: 52px;
@@ -41,6 +42,7 @@ body {
     font-weight: 700;
     line-height: 1.3em;
     margin: 0;
+    letter-spacing: 0.1em;
     @include respond-to('medium') {
       font-size: 25px;
     }
@@ -51,10 +53,10 @@ body {
 
   h3 {
     font-family: $font1;
-    font-size: 25px;
+    font-size: 31px;
     font-weight: 700;
-    line-height: 28px;
-    padding: 25px 0 18px;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
     @include respond-to('small') {
       font-size: 22px;
       margin: 4px 0;
@@ -64,6 +66,7 @@ body {
 
   h4 {
     font-family: $font1;
+    letter-spacing: 0.1em;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -130,7 +133,8 @@ body {
   text-transform: uppercase;
   border: 1px solid $color-white;
   border-radius: 4px;
-  padding: 8px 14px;
+  letter-spacing: 0.1em;
+  padding: 10px 21px 7px 21px;
   color: $color-white;
   letter-spacing: 1.3px;
   position: relative;
@@ -195,4 +199,8 @@ body {
   border-radius: 50%;
   opacity: 0.4;
   z-index: 4;
+}
+
+.hidden {
+  opacity: 0;
 }

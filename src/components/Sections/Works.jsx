@@ -48,7 +48,7 @@ const Works = () => {
                 href="https://web-agency.jordanzanetti.fr/"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-style"
+                className="btn-style hidden"
               >
                 Voir le site
               </a>
@@ -83,7 +83,7 @@ const Works = () => {
                 href="https://restoh.jordanzanetti.fr/"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-style"
+                className="btn-style hidden"
               >
                 Voir le site
               </a>
@@ -114,7 +114,7 @@ const Works = () => {
               configuration des modules
             </p>
             <div className="btn-container">
-              <div className="btn-style">
+              <div className="btn-style hidden">
                 <a
                   href="https://www.efitax.lu/fr"
                   target="_blank"
@@ -154,7 +154,7 @@ const Works = () => {
                 href="https://www.fermedespetelles.be/"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-style"
+                className="btn-style hidden"
               >
                 Voir le site
               </a>

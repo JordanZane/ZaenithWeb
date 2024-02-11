@@ -52,13 +52,20 @@
             @include fade(fadeUp, 10px, 0, 0.3s, 0.5s);
           }
         }
-      }
-      .img-container {
-        img {
-          border-radius: 16px;
-          max-width: 100%;
-          &.show {
-            @include appearScale(appearScale08, 0.8, 0.8, 0.5s, 0.2s);
+        .img-container {
+          img {
+            border-radius: 16px;
+            max-width: 100%;
+            &.show {
+              @include appearScale(appearScale08, 0.8, 0.8, 0.5s, 0.2s);
+            }
+          }
+        }
+        .btn-container {
+          .btn-style {
+            &.show {
+              @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.8s);
+            }
           }
         }
       }

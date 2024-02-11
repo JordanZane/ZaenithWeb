@@ -1,7 +1,6 @@
 .home {
   section#works {
     .section-content {
-      margin-top: 100px;
       &.wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -67,6 +66,29 @@
               @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.8s);
             }
           }
+        }
+      }
+    }
+  }
+  section#services {
+    .section-content {
+      .service-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 200px;
+        position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .service-desc {
+          max-width: 500px;
+        }
+        .line {
+          width: 100%;
+          height: 2px;
+          background-color: $color-white;
+          margin: 0 30px;
         }
       }
     }

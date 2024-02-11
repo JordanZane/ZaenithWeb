@@ -10,9 +10,9 @@ const Works = () => {
   return (
     <section className="section" id="works">
       <div className="container">
-        <div className="section-header">
-          <h2>Références</h2>
-          <div className="link-container">
+        <div className="section-header hidden">
+          <h2 className="hidden">Références</h2>
+          <div className="link-container hidden">
             <a href="/">
               Voir plus <img src={ArrowRight} />
             </a>
@@ -20,7 +20,7 @@ const Works = () => {
         </div>
         <div className="section-content wrapper">
           <div className="work-container">
-            <h3>Web Agency</h3>
+            <h3 className="hidden">Web Agency</h3>
             <div className="img-container">
               <a
                 href="https://web-agency.jordanzanetti.fr/"
@@ -30,6 +30,7 @@ const Works = () => {
                 <img
                   src={WebAgency}
                   alt="Web Agency - Template for Web Agency"
+                  className="hidden"
                 />
               </a>
             </div>
@@ -54,7 +55,7 @@ const Works = () => {
             </div>
           </div>
           <div className="work-container odd-work">
-            <h3>Restoh</h3>
+            <h3 className="hidden">Restoh</h3>
             <div className="img-container">
               <a
                 href="https://restoh.jordanzanetti.fr/"
@@ -64,6 +65,7 @@ const Works = () => {
                 <img
                   src={Restoh}
                   alt="Restoh - Template for French restaurant"
+                  className="hidden"
                 />
               </a>
             </div>
@@ -88,14 +90,18 @@ const Works = () => {
             </div>
           </div>
           <div className="work-container">
-            <h3>Efitax Expertises</h3>
+            <h3 className="hidden">Efitax Expertises</h3>
             <div className="img-container">
               <a
                 href="https://www.efitax.lu/fr"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Efitax} alt="Efitax - Bureau comptable digitalisé" />
+                <img
+                  src={Efitax}
+                  alt="Efitax - Bureau comptable digitalisé"
+                  className="hidden"
+                />
               </a>
             </div>
             <div className="roles">
@@ -120,7 +126,7 @@ const Works = () => {
             </div>
           </div>
           <div className="work-container odd-work">
-            <h3>Ferme des Pételles</h3>
+            <h3 className="hidden">Ferme des Pételles</h3>
             <div className="img-container">
               <a
                 href="https://www.fermedespetelles.be/"
@@ -130,6 +136,7 @@ const Works = () => {
                 <img
                   src={FermePetelles}
                   alt="Ferme des Pételles - Ferme pédagogique"
+                  className="hidden"
                 />
               </a>
             </div>

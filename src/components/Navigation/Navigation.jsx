@@ -43,7 +43,8 @@ const Navigation = () => {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                duration={300}
+                duration={500}
+                onClick={handleShowNavigation}
               >
                 <img src={Logo} alt="ZænithWeb - Freelance Web Developper" />
               </Link>
@@ -69,7 +70,7 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration={300}
+                  duration={500}
                   onClick={handleShowNavigation}
                 >
                   Accueil
@@ -81,7 +82,7 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration={300}
+                  duration={500}
                   onClick={handleShowNavigation}
                 >
                   Références
@@ -93,7 +94,7 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration={300}
+                  duration={500}
                   onClick={handleShowNavigation}
                 >
                   Services
@@ -105,7 +106,7 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration={300}
+                  duration={500}
                   onClick={handleShowNavigation}
                 >
                   à propos
@@ -117,7 +118,7 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration={300}
+                  duration={500}
                   onClick={handleShowNavigation}
                 >
                   Contact

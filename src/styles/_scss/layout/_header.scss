@@ -12,7 +12,7 @@ header {
         @include transition(0.3s);
         transform: scale(0);
         filter: blur(15px);
-        animation: appearScale 0.5s 0.6s linear forwards;
+        @include appearScale(appearScale0, 0, 0.8, 0.5s, 0.2s);
       }
       .second-title {
         color: $color-white;
@@ -25,8 +25,7 @@ header {
       top: -15px;
       font-family: $font1;
       opacity: 0;
-      animation: fadeUp 0.5s 0.2s linear forwards;
-
+      @include fade(fade30, 30px, 0, 0.5s, 0s);
       span {
         color: transparent;
         background: $gradient-primay;
@@ -35,22 +34,21 @@ header {
         transform: translate(-100%, 0);
         display: inline-block;
         opacity: 0;
-        animation: fadeLeft 0.5s 0.8s linear forwards;
-      }
-    }
-    .btn-container {
-      margin-top: 60px;
-      .btn-style {
-        transform: scale(0);
-        &.show {
-          animation: appearScale 0.5s 0.8s linear forwards;
-        }
+        animation: fadeLeft 0.5s 0.2s linear forwards;
       }
     }
     p.intro {
       opacity: 0;
       &.show {
-        animation: fadeUp 0.8s 0.3s linear forwards;
+        @include fade(fade15, 15px, 0, 0.5s, 0.4s);
+      }
+    }
+    .btn-container {
+      margin-top: 60px;
+      .btn-style {
+        &.show {
+          @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.5s);
+        }
       }
     }
   }

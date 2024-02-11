@@ -24,7 +24,7 @@
   }
 }
 
-/// Transition
+// Transition
 @mixin transition($v1) {
   -webkit-transition: all $v1 ease-in-out;
   -moz-transition: all $v1 ease-in-out;
@@ -44,4 +44,51 @@
   -moz-transform: scale($v1);
   -o-transform: scale($v1);
   transform: scale($v1);
+}
+
+// Animations
+@mixin fade(
+  $name,
+  $translateY,
+  $translateX,
+  $animationDuration,
+  $animationDelay
+) {
+  @keyframes #{$name} {
+    0% {
+      transform: translateY(#{$translateY}) translateX(#{$translateX});
+      opacity: 0;
+      filter: blur(15px);
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  animation: #{$name} $animationDuration $animationDelay linear forwards;
+}
+
+@mixin appearScale(
+  $name,
+  $scale,
+  $opacity,
+  $animationDuration,
+  $animationDelay
+) {
+  @keyframes #{$name} {
+    0% {
+      transform: scale(#{$scale});
+      opacity: $opacity;
+      filter: blur(15px);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  animation: #{$name} $animationDuration $animationDelay linear forwards;
 }

@@ -22,6 +22,9 @@
           }
         }
         .roles {
+          &.show {
+            @include fade(fadeUp, 5px, 0, 0.3s, 0.4s);
+          }
           span {
             padding-right: 30px;
             color: rgba($color: #fff, $alpha: 0.5);
@@ -45,6 +48,9 @@
         }
         p.description {
           margin: 30px 0;
+          &.show {
+            @include fade(fadeUp, 10px, 0, 0.3s, 0.5s);
+          }
         }
       }
       .img-container {

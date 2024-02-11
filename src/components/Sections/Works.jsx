@@ -34,12 +34,12 @@ const Works = () => {
                 />
               </a>
             </div>
-            <div className="roles">
+            <div className="roles hidden">
               <span>Site vitrine</span>
               <span>Template</span>
               <span>Développement Frontend</span>
             </div>
-            <p className="description">
+            <p className="description hidden">
               Création de maquette et réalisation d'un template d'agence en
               React Js (Single Page application)
             </p>
@@ -69,12 +69,12 @@ const Works = () => {
                 />
               </a>
             </div>
-            <div className="roles">
+            <div className="roles hidden">
               <span>Site vitrine</span>
               <span>Template</span>
               <span>Développement Frontend</span>
             </div>
-            <p className="description">
+            <p className="description hidden">
               Création de maquette et réalisation d'un template de restaurant en
               React Js (Single Page application)
             </p>
@@ -104,12 +104,12 @@ const Works = () => {
                 />
               </a>
             </div>
-            <div className="roles">
+            <div className="roles hidden">
               <span>Site vitrine</span>
               <span>CMS</span>
               <span>Développement Frontend</span>
             </div>
-            <p className="description">
+            <p className="description hidden">
               Intégration de la maquette en Html5/Cs33 & CMS, installation et
               configuration des modules
             </p>
@@ -140,12 +140,12 @@ const Works = () => {
                 />
               </a>
             </div>
-            <div className="roles">
+            <div className="roles hidden">
               <span>Site vitrine</span>
               <span>Wordpress</span>
               <span>Développement Frontend</span>
             </div>
-            <p className="description">
+            <p className="description hidden">
               Intégration de la maquette en Html5/Cs33 & Wordpress, installation
               et configuration des modules
             </p>

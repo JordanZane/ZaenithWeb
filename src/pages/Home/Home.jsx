@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import Header from '../../components/Sections/Header';
 import Works from '../../components/Sections/Works';
 import Services from '../../components/Sections/Services';
+import About from '../../components/Sections/About';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <Works />
       <Services />
+      <About />
     </div>
   );
 };

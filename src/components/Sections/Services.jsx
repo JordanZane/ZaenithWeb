@@ -8,7 +8,7 @@ const Services = () => {
         <div className="section-header hidden">
           <h2 className="hidden">Services</h2>
           <div className="img-container">
-            <img src={MediumLogo} alt="" />
+            <img className="hidden" src={MediumLogo} alt="" />
           </div>
         </div>
         <div className="section-content">

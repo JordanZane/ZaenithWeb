@@ -93,4 +93,38 @@
       }
     }
   }
+
+  section#about {
+    .section-content {
+      margin: 100px auto;
+      max-width: 900px;
+      text-align: center;
+      .description {
+        padding: 100px 0;
+        p {
+          font-size: $s-title-font-size;
+          font-weight: bold;
+          span {
+            color: transparent;
+            background: $gradient-primay;
+            background-clip: text;
+            -webkit-background-clip: text;
+          }
+        }
+      }
+    }
+    .skills-container {
+      display: flex;
+      justify-content: space-around;
+      background-color: rgba($color: #fff, $alpha: 0.06);
+      padding: 30px 0;
+      img {
+        filter: grayscale(1);
+        @include transition(0.3s);
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
 }

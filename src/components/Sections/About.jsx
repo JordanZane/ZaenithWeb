@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import MediumLogo from '../../assets/images/medium-logo-icon.svg';
 import HtmlLogo from '../../assets/images/html-icon.svg';
 import CssLogo from '../../assets/images/css-icon.svg';
@@ -14,6 +17,17 @@ import PrestashopLogo from '../../assets/images/prestashop-icon.svg';
 import ShopifyLogo from '../../assets/images/shopify-icon.svg';
 
 const About = () => {
+  const settings = {
+    dots: false,
+    infinite: true, // Mettre à true pour obtenir l'effet infini
+    speed: 1500,
+    slidesToShow: 12,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    arrows: false,
+    cssEase: 'linear',
+  };
   return (
     <section className="section" id="about">
       <div className="container">
@@ -35,18 +49,44 @@ const About = () => {
         </div>
       </div>
       <div className="skills-container">
-        <img src={HtmlLogo} alt="Html5" />
-        <img src={CssLogo} alt="Css3" />
-        <img src={JsLogo} alt="JavaScript" />
-        <img src={BootstrapLogo} alt="Bootstrap 5" />
-        <img src={SassLogo} alt="Sass" />
-        <img src={ReactLogo} alt="React Js" />
-        <img src={XdLogo} alt="Adobe XD" />
-        <img src={PhotoshopLogo} alt="Photoshop" />
-        <img src={FigmaLogo} alt="Figma" />
-        <img src={PrestashopLogo} alt="Prestashop" />
-        <img src={ShopifyLogo} alt="Shopify" />
-        <img src={WordpressLogo} alt="Wordpress" />
+        <Slider {...settings}>
+          <div>
+            <img src={HtmlLogo} alt="Html5" title="Html5" />
+          </div>
+          <div>
+            <img src={CssLogo} alt="Css3" title="Css3" />
+          </div>
+          <div>
+            <img src={JsLogo} alt="JavaScript" title="JavaScript" />
+          </div>
+          <div>
+            <img src={BootstrapLogo} alt="Bootstrap 5" title="Bootstrap 5" />
+          </div>
+          <div>
+            <img src={SassLogo} alt="Sass" title="Sass" />
+          </div>
+          <div>
+            <img src={ReactLogo} alt="React Js" title="React Js" />
+          </div>
+          <div>
+            <img src={XdLogo} alt="Adobe XD" title="Adobe XD" />
+          </div>
+          <div>
+            <img src={PhotoshopLogo} alt="Photoshop" title="Photoshop" />
+          </div>
+          <div>
+            <img src={FigmaLogo} alt="Figma" title="Figma" />
+          </div>
+          <div>
+            <img src={PrestashopLogo} alt="Prestashop" title="Prestashop" />
+          </div>
+          <div>
+            <img src={ShopifyLogo} alt="Shopify" title="Shopify" />
+          </div>
+          <div>
+            <img src={WordpressLogo} alt="Wordpress" title="Wordpress" />
+          </div>
+        </Slider>
       </div>
     </section>
   );

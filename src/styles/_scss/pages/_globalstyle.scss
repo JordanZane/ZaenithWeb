@@ -38,7 +38,7 @@ body {
     margin: 0;
     transform: translate(0, 30px);
     opacity: 0;
-    @include fade(fade30, 30px, 0, 0.5s, 0s);
+    @include fade(fade15, 30px, 0, 0.5s, 0s);
     @include respond-to('medium') {
       font-size: 30px;
     }

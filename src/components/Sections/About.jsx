@@ -37,7 +37,7 @@ const About = () => {
           </div>
         </div>
         <div className="section-content">
-          <div className="description">
+          <div className="description hidden">
             <p>
               Hello ! Moi c'est <span>Jordan</span>, je me consacre à la
               réalisation de vos idées en projet web. Chaque animation, chaque
@@ -49,7 +49,7 @@ const About = () => {
       </div>
       <div className="skills-container">
         <Slider {...settings}>
-          <div className="test">
+          <div>
             <img src={HtmlLogo} alt="Html5" title="Html5" />
           </div>
           <div>

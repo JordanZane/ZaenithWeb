@@ -19,14 +19,13 @@ import ShopifyLogo from '../../assets/images/shopify-icon.svg';
 const About = () => {
   const settings = {
     dots: false,
-    infinite: true, // Mettre à true pour obtenir l'effet infini
-    speed: 1500,
+    infinite: true,
+    speed: 1000,
     slidesToShow: 12,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     arrows: false,
-    cssEase: 'linear',
   };
   return (
     <section className="section" id="about">
@@ -50,7 +49,7 @@ const About = () => {
       </div>
       <div className="skills-container">
         <Slider {...settings}>
-          <div>
+          <div className="test">
             <img src={HtmlLogo} alt="Html5" title="Html5" />
           </div>
           <div>

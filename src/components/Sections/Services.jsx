@@ -13,10 +13,11 @@ const Services = () => {
         </div>
         <div className="section-content">
           <div className="service-content">
-            <p className="big-title">Développement</p>
+            <p className="big-title fadeLeft hidden">Développement</p>
             <div className="line"></div>
-            <p className="service-desc">
-              Sites vitrines ou plateformes E-commerce, je m'occupe de
+            <p className="service-desc fadeRight hidden">
+              <strong>Sites vitrines</strong> ou{' '}
+              <strong>plateformes E-commerce</strong>, je m'occupe de
               l'intégration harmonieuse de vos maquettes, assurant une
               expérience fluide sur tous les appareils. Chaque élément est
               soigneusement positionné, créant ainsi une navigation intuitive et
@@ -24,25 +25,28 @@ const Services = () => {
             </p>
           </div>
           <div className="service-content">
-            <p className="service-desc">
-              Des animations et des transitions soigneusement pensées pour
-              élever l'interactivité de votre site web. Chaque mouvement est
-              conçu pour améliorer l'expérience utilisateur, créant ainsi une
-              immersion captivante à chaque visite.
+            <p className="service-desc fadeLeft hidden">
+              Des <strong>animations</strong> et des{' '}
+              <strong>transitions</strong> soigneusement pensées pour élever
+              l'interactivité de votre site web. Chaque mouvement est conçu pour
+              améliorer <strong>l'expérience utilisateur</strong>, créant ainsi
+              une immersion captivante à chaque visite.
             </p>
             <div className="line"></div>
-            <p className="big-title">UX Design</p>
+            <p className="big-title fadeRight hidden">UX Design</p>
           </div>
           <div className="service-content">
-            <p className="big-title">SEO</p>
+            <p className="big-title fadeLeft hidden">SEO</p>
             <div className="line"></div>
-            <p className="service-desc">
-              Je déploie une approche SEO stratégique pour renforcer la présence
-              en ligne de votre marque. En optimisant le copywriting, les
-              sitemaps, les meta tags, et les balises OpenGraph, tout en
-              garantissant la performance, la sémantique, et le respect des
-              normes W3C, j'améliore votre visibilité dans les classements de
-              recherche.
+            <p className="service-desc fadeRight hidden">
+              Je déploie une approche <strong>SEO stratégique </strong> pour
+              renforcer la présence en ligne de votre marque. En optimisant le{' '}
+              <strong>copywriting</strong>, <strong>les sitemaps</strong>, les{' '}
+              <strong>meta tags</strong> , et les{' '}
+              <strong>balises OpenGraph</strong>, tout en garantissant la{' '}
+              <strong>performance</strong>, la <strong>sémantique</strong>, et
+              le <strong>respect des normes W3C</strong>. J'améliore votre
+              visibilité dans les classements de recherche.
             </p>
           </div>
         </div>

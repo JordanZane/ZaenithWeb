@@ -29,6 +29,7 @@ const About = () => {
   };
   return (
     <section className="section" id="about">
+      <div className="blue-blur-circle"></div>
       <div className="container">
         <div className="section-header hidden">
           <h2 className="hidden">à propos</h2>

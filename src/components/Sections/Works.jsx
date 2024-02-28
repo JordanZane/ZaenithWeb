@@ -161,6 +161,7 @@ const Works = () => {
           </div>
         </div>
       </div>
+      <div className="blue-blur-circle"></div>
     </section>
   );
 };

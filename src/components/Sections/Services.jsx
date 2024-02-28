@@ -4,6 +4,7 @@ import MediumLogo from '../../assets/images/medium-logo-icon.svg';
 const Services = () => {
   return (
     <section className="section" id="services">
+      <div className="green-blur-circle"></div>
       <div className="container">
         <div className="section-header hidden">
           <h2 className="hidden">Services</h2>
@@ -51,6 +52,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <div className="green-blur-circle second-circle"></div>
     </section>
   );
 };

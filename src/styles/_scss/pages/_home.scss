@@ -204,21 +204,21 @@ section#contact {
       @include fade(fade-30x01, 0, -30px, 0.5s, 0s);
     }
     .show.email-input {
-      @include fade(fade-30x01, 0, -30px, 0.5s, 0.2s);
+      @include fade(fade-30x01, 0, -30px, 0.5s, 0.1s);
     }
     .show.subject-input {
-      @include fade(fade-30x02, 0, -30px, 0.5s, 0.4s);
+      @include fade(fade-30x02, 0, -30px, 0.5s, 0.2s);
     }
     .show.company-input {
-      @include fade(fade-30x03, 0, -30px, 0.5s, 0.6s);
+      @include fade(fade-30x03, 0, -30px, 0.5s, 0.3s);
     }
     .show.message-input {
-      @include fade(fade-30x04, 0, -30px, 0.5s, 0.8s);
+      @include fade(fade-30x04, 0, -30px, 0.5s, 0.4s);
     }
     .btn-container {
       .btn-style {
         &.show {
-          @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.2s);
+          @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.4s);
         }
       }
     }

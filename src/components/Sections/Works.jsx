@@ -114,15 +114,14 @@ const Works = () => {
               configuration des modules
             </p>
             <div className="btn-container">
-              <div className="btn-style hidden">
-                <a
-                  href="https://www.efitax.lu/fr"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Voir le site
-                </a>
-              </div>
+              <a
+                href="https://www.efitax.lu/fr"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-style hidden"
+              >
+                Voir le site
+              </a>
             </div>
           </div>
           <div className="work-container odd-work">

@@ -34,7 +34,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="navigation">
+      <div className="navigation hidden">
         <div className="container">
           <nav>
             <div className="logo-container">

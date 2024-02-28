@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="hidden">
       <div className="container">
         <div className="footer-content">
           <div className="logo-container">

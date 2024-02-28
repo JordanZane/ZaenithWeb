@@ -255,6 +255,9 @@ section#contact {
     .required-field {
       align-self: flex-end;
       font-size: 0.825em;
+      &.show {
+        @include appearScale(appearSCale08, 0, 0.8, 0.3s, 0.5s);
+      }
     }
   }
 }

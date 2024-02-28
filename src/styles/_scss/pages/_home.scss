@@ -132,10 +132,12 @@
       width: 400px;
       height: 400px;
       &.second-circle {
+        width: 450px;
+        height: 450px;
         top: unset;
         right: unset;
         bottom: -10%;
-        left: 0;
+        left: -8%;
       }
     }
   }
@@ -203,11 +205,12 @@ section#contact {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 900px;
+    margin: auto;
     .form-content {
       display: flex;
       flex-direction: column;
       width: 100%;
-      max-width: 900px;
       margin-bottom: 30px;
       input,
       textarea,
@@ -223,6 +226,9 @@ section#contact {
           color: $color-black;
         }
       }
+    }
+    .message-input {
+      margin-bottom: 0;
     }
     .show.name-input {
       @include fade(fade-30x01, 0, -30px, 0.5s, 0s);
@@ -245,6 +251,10 @@ section#contact {
           @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.4s);
         }
       }
+    }
+    .required-field {
+      align-self: flex-end;
+      font-size: 0.825em;
     }
   }
 }

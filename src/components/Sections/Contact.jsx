@@ -46,6 +46,7 @@ const Contact = () => {
                 rows="10"
               ></textarea>
             </div>
+            <p className="required-field">*Champs requis</p>
             <div className="btn-container">
               <div className="btn-style hidden">C'est parti !</div>
             </div>

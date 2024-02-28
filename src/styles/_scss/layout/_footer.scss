@@ -1,3 +1,17 @@
-footer{
-  
+footer {
+  padding: 20px 0;
+  background-color: rgba($color: #fff, $alpha: 0.1);
+  .logo-container {
+    cursor: pointer;
+  }
+  .footer-content {
+    display: flex;
+    align-items: center;
+    p {
+      margin: auto;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
 }

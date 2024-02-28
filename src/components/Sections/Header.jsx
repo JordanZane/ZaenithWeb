@@ -13,7 +13,7 @@ const Header = () => {
             <span className="first-title">zænith</span>
             <span className="second-title">web</span>
             <div className="logo-container ">
-              <img src={BigLogo} />
+              <img src={BigLogo} alt="Zænith Web - Développeur web freelance" />
             </div>
           </h1>
           <p className="subtitle">

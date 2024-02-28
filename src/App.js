@@ -2,6 +2,7 @@ import React from 'react';
 
 import Home from './pages/Home/Home';
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Sections/Footer';
 
 import ScrollAnim from './components/ScrollAnim/ScrollAnim';
 
@@ -13,6 +14,7 @@ function App() {
       <ScrollAnim />
       <Navigation />
       <Home />
+      <Footer />
     </>
   );
 }

@@ -183,6 +183,50 @@
     .blue-blur-circle {
       bottom: 30%;
     }
+    .triangle-container {
+      width: 430px;
+      height: 430px;
+      overflow: hidden;
+      margin: auto;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+    .triangle {
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .triangle path {
+      fill: none;
+      stroke: $color-primary;
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-dasharray: 430;
+      stroke-dashoffset: 430;
+      &.show {
+        animation: draw 1.75s ease-in forwards;
+        opacity: 1;
+      }
+    }
+
+    @keyframes draw {
+      0% {
+        stroke-dashoffset: 430;
+      }
+      33% {
+        stroke-dashoffset: 430 - (430 * 0.33);
+      }
+      67% {
+        stroke-dashoffset: 430 - (430 * 0.67);
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
   }
 }
 

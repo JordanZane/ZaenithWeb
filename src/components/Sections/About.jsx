@@ -39,6 +39,11 @@ const About = () => {
         </div>
         <div className="section-content">
           <div className="description hidden">
+            <div className="triangle-container">
+              <svg className="triangle" viewBox="0 0 100 100">
+                <path className="hidden" d="M 50 0 L 100 100 L 0 100 Z" />
+              </svg>
+            </div>
             <p>
               Hello ! Moi c'est <span>Jordan</span>, je me consacre à la
               réalisation de vos idées en projet web. Chaque animation, chaque

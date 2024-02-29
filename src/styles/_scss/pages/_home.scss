@@ -215,13 +215,13 @@
 
     @keyframes draw {
       0% {
-        stroke-dashoffset: 430;
+        stroke-dashoffset: 450;
       }
       33% {
-        stroke-dashoffset: 430 - (430 * 0.33);
+        stroke-dashoffset: 450 - (450 * 0.33);
       }
       67% {
-        stroke-dashoffset: 430 - (430 * 0.67);
+        stroke-dashoffset: 450 - (450 * 0.67);
       }
       100% {
         stroke-dashoffset: 0;

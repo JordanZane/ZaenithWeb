@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Home from './pages/Home/Home';
 import Navigation from './components/Navigation/Navigation';
@@ -13,6 +13,12 @@ function App() {
   const handleShowWorksPage = (e) => {
     e.preventDefault();
     setShowWorksPage(true);
+    setTimeout(() => {
+      const homeElement = document.getElementById('worksPage');
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
   };
 
   const handleHideWorksPage = (e) => {

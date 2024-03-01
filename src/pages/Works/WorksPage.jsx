@@ -11,7 +11,7 @@ import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
 
 const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
   return (
-    <div className="works-page">
+    <div className="works-page" id="worksPage">
       <ScrollAnim />
       <div className="container">
         <div className="btn-container">

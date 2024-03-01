@@ -12,13 +12,14 @@ function App() {
 
   const handleShowWorksPage = (e) => {
     e.preventDefault();
+    document.querySelector('body').style.overflowX = 'hidden';
     setShowWorksPage(true);
     setTimeout(() => {
-      const homeElement = document.getElementById('worksPage');
-      if (homeElement) {
-        homeElement.scrollIntoView({ behavior: 'smooth' });
+      const worksPageElement = document.getElementById('worksPage');
+      if (worksPageElement) {
+        worksPageElement.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 0);
+    }, 500);
   };
 
   const handleHideWorksPage = (e) => {

@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   @include transition(0.5s);
+  @include fade(fadeLeftX100, 0, 100%, 0.5s, 0s);
   .btn-container {
     padding-bottom: 50px;
     img {
@@ -63,7 +64,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 445.25px;
+      min-height: 438.25px;
       border: 1px solid $color-white;
       border-radius: 16px;
       a {

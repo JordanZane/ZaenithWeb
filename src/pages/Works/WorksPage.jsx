@@ -9,7 +9,7 @@ import FermePetelles from '../../assets/images/ferme-des-petelles.jpg';
 
 import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
 
-const WorksPage = ({ handleHideWorksPage }) => {
+const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
   return (
     <div className="works-page">
       <ScrollAnim />
@@ -60,7 +60,7 @@ const WorksPage = ({ handleHideWorksPage }) => {
               </a>
             </div>
           </div>
-          <div className="work-container odd-work">
+          <div className="work-container">
             <h3>Restoh</h3>
             <div className="img-container">
               <a
@@ -111,8 +111,8 @@ const WorksPage = ({ handleHideWorksPage }) => {
               <span>Développement Frontend</span>
             </div>
             <p className="description">
-              Intégration de la maquette en Html5/Cs33 & CMS, installation et
-              configuration des modules
+              Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
+              installation et configuration des modules
             </p>
             <div className="btn-container">
               <a
@@ -125,7 +125,7 @@ const WorksPage = ({ handleHideWorksPage }) => {
               </a>
             </div>
           </div>
-          <div className="work-container odd-work">
+          <div className="work-container">
             <h3>Ferme des Pételles</h3>
             <div className="img-container">
               <a
@@ -145,8 +145,8 @@ const WorksPage = ({ handleHideWorksPage }) => {
               <span>Développement Frontend</span>
             </div>
             <p className="description">
-              Intégration de la maquette en Html5/Cs33 & Wordpress, installation
-              et configuration des modules
+              Intégration de la maquette via Wordpress, installation et
+              configuration des modules
             </p>
             <div className="btn-container">
               <a
@@ -156,6 +156,128 @@ const WorksPage = ({ handleHideWorksPage }) => {
                 className="btn-style"
               >
                 Voir le site
+              </a>
+            </div>
+          </div>
+          <div className="work-container">
+            <h3>Il Pizzico</h3>
+            <div className="img-container">
+              <a
+                href="https://www.ilpizzico.lu/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={FermePetelles}
+                  alt="Il Pizzico, Restaurant de spécialité Françaises et Italienne"
+                />
+              </a>
+            </div>
+            <div className="roles">
+              <span>Site vitrine</span>
+              <span>CMS</span>
+              <span>Développement Frontend</span>
+            </div>
+            <p className="description">
+              Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
+              installation et configuration des modules
+            </p>
+            <div className="btn-container">
+              <a
+                href="https://www.ilpizzico.lu/fr"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-style"
+              >
+                Voir le site
+              </a>
+            </div>
+          </div>
+          <div className="work-container">
+            <h3>Centre de Thérapie Manuelle</h3>
+            <div className="img-container">
+              <a
+                href="https://www.centredetherapiemanuelle.lu/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={FermePetelles}
+                  alt="Cabinet de kinésithérapie, ostéopathie
+                  & médecine traditionnelle chinoise"
+                />
+              </a>
+            </div>
+            <div className="roles">
+              <span>Site vitrine</span>
+              <span>CMS</span>
+              <span>Développement Frontend</span>
+            </div>
+            <p className="description">
+              Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
+              installation et configuration des modules
+            </p>
+            <div className="btn-container">
+              <a
+                href="https://www.centredetherapiemanuelle.lu/fr"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-style"
+              >
+                Voir le site
+              </a>
+            </div>
+          </div>
+          <div className="work-container">
+            <h3>O3 - Architecture</h3>
+            <div className="img-container">
+              <a
+                href="https://www.o3-architecture.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={FermePetelles}
+                  alt="O3 Architecture - Cabinet d'architecture au Luxembourg"
+                />
+              </a>
+            </div>
+            <div className="roles">
+              <span>Site vitrine</span>
+              <span>CMS</span>
+              <span>Développement Frontend</span>
+            </div>
+            <p className="description">
+              Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
+              installation et configuration des modules
+            </p>
+            <div className="btn-container">
+              <a
+                href="https://www.o3-architecture.com/fr"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-style"
+              >
+                Voir le site
+              </a>
+            </div>
+          </div>
+          <div className="work-container add-project">
+            <h3>Mon projet</h3>
+            <div className="img-container">
+              <a href="/" onClick={handleContactLink}>
+                +
+              </a>
+            </div>
+            <div className="roles">
+              <span>Site vitrine</span>
+              <span>E-commerce</span>
+              <span>Landing page</span>
+            </div>
+            <p className="description">J'ajoute ici mon projet !</p>
+            <div className="btn-container">
+              <a href="/" className="btn-style" onClick={handleContactLink}>
+                C'est parti !
               </a>
             </div>
           </div>

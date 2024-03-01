@@ -58,4 +58,25 @@
       }
     }
   }
+  .add-project {
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 445.25px;
+      border: 1px solid $color-white;
+      border-radius: 16px;
+      a {
+        font-size: $l-title-font-size;
+        border: 1px solid $color-white;
+        border-radius: 50%;
+        padding: 10px 35px;
+        @include transition(0.5s);
+        &:hover {
+          background: $gradient-primay;
+          border-color: $color-primary;
+        }
+      }
+    }
+  }
 }

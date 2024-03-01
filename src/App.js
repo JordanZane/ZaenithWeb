@@ -18,12 +18,32 @@ function App() {
   const handleHideWorksPage = (e) => {
     e.preventDefault();
     setShowWorksPage(false);
+    setTimeout(() => {
+      const homeElement = document.getElementById('home');
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
+  };
+
+  const handleContactLink = (e) => {
+    e.preventDefault();
+    setShowWorksPage(false);
+    setTimeout(() => {
+      const contactElement = document.getElementById('contact');
+      if (contactElement) {
+        contactElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
   };
 
   return (
     <>
       {showWorksPage ? (
-        <WorksPage handleHideWorksPage={handleHideWorksPage} />
+        <WorksPage
+          handleHideWorksPage={handleHideWorksPage}
+          handleContactLink={handleContactLink}
+        />
       ) : (
         <>
           <Navigation />

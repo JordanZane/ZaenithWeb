@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Home from './pages/Home/Home';
 import Navigation from './components/Navigation/Navigation';
@@ -12,25 +12,25 @@ function App() {
 
   const handleShowWorksPage = (e) => {
     e.preventDefault();
-
     setShowWorksPage(true);
   };
 
   const handleHideWorksPage = (e) => {
     e.preventDefault();
-
     setShowWorksPage(false);
   };
 
   return (
     <>
-      <Navigation />
       {showWorksPage ? (
         <WorksPage handleHideWorksPage={handleHideWorksPage} />
       ) : (
-        <Home handleShowWorksPage={handleShowWorksPage} />
+        <>
+          <Navigation />
+          <Home handleShowWorksPage={handleShowWorksPage} />
+          <Footer />
+        </>
       )}
-      <Footer />
     </>
   );
 }

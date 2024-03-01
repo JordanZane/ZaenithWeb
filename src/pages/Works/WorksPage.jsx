@@ -6,12 +6,20 @@ import Restoh from '../../assets/images/restoh.jpg';
 import Efitax from '../../assets/images/efitax.jpg';
 import FermePetelles from '../../assets/images/ferme-des-petelles.jpg';
 
-const WorksPage = () => {
+import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
+
+const WorksPage = ({ handleHideWorksPage }) => {
   return (
-    <div className="works">
+    <div className="works-page">
+      <ScrollAnim />
+      <div className="btn-container">
+        <a href="/" className="btn-style" onClick={handleHideWorksPage}>
+          Retour Accueil
+        </a>
+      </div>
       <div className="container">
         <div className="section-header">
-          <h1>Références</h1>
+          <h2>Références</h2>
           <div className="img-container">
             <img src={MediumLogo} alt="" />
           </div>

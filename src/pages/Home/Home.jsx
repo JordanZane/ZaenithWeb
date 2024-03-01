@@ -6,11 +6,14 @@ import Services from '../../components/Sections/Services';
 import About from '../../components/Sections/About';
 import Contact from '../../components/Sections/Contact';
 
-const Home = () => {
+import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
+
+const Home = ({ handleShowWorksPage }) => {
   return (
     <div className="home">
+      <ScrollAnim />
       <Header />
-      <Works />
+      <Works handleShowWorksPage={handleShowWorksPage} />
       <Services />
       <About />
       <Contact />

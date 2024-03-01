@@ -6,14 +6,14 @@ import Restoh from '../../assets/images/restoh.jpg';
 import Efitax from '../../assets/images/efitax.jpg';
 import FermePetelles from '../../assets/images/ferme-des-petelles.jpg';
 
-const Works = () => {
+const Works = ({ handleShowWorksPage }) => {
   return (
     <section className="section" id="works">
       <div className="container">
         <div className="section-header hidden">
           <h2 className="hidden">Références</h2>
           <div className="link-container hidden">
-            <a href="/">
+            <a href="/" onClick={handleShowWorksPage}>
               Voir plus <img src={ArrowRight} />
             </a>
           </div>

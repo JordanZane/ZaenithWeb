@@ -12,12 +12,11 @@ function App() {
 
   const handleShowWorksPage = (e) => {
     e.preventDefault();
-    document.querySelector('body').style.overflowX = 'hidden';
     setShowWorksPage(true);
     setTimeout(() => {
-      const worksPageElement = document.getElementById('worksPage');
-      if (worksPageElement) {
-        worksPageElement.scrollIntoView({ behavior: 'smooth' });
+      const homeElement = document.getElementById('worksPage');
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: 'smooth' });
       }
     }, 500);
   };

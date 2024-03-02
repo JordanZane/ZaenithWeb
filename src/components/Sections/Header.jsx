@@ -31,7 +31,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={100}
+              duration={500}
             >
               Discutons de votre projet
             </Link>

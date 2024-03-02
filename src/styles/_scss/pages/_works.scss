@@ -26,6 +26,13 @@
         @include fade(fadeDown20, -20px, 0, 0.3s, 0.2s);
       }
     }
+    .img-container {
+      img {
+        &.show {
+          @include appearScale(appearScale08, 0.8, 0.8, 0.5s, 0.2s);
+        }
+      }
+    }
     span {
       padding-right: 18px;
       color: rgba($color: #fff, $alpha: 0.5);

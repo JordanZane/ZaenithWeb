@@ -22,7 +22,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
         <div className="section-header hidden">
           <h2 className="hidden">Références</h2>
           <div className="img-container">
-            <img src={MediumLogo} alt="" />
+            <img className="hidden" src={MediumLogo} alt="" />
           </div>
         </div>
         <div className="section-content wrapper">

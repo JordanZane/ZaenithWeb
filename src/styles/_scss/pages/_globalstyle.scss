@@ -6,6 +6,7 @@ body {
   background: $bg-color;
   scroll-behavior: smooth;
   margin: 0;
+  overflow-x: hidden;
   @include respond-to('small') {
     font-size: 16px;
   }
@@ -227,7 +228,7 @@ body {
 .blue-blur-circle {
   position: absolute;
   right: -15%;
-  bottom: 24%;
+  bottom: 15%;
   width: 500px;
   height: 500px;
   background-color: $color-secondary;

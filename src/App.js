@@ -4,7 +4,7 @@ import Home from './pages/Home/Home';
 import Navigation from './components/Navigation/Navigation';
 import WorksPage from './pages/Works/WorksPage';
 import Footer from './components/Sections/Footer';
-
+import AnimatedCursor from 'react-animated-cursor';
 import './styles/_scss/main.scss';
 
 function App() {
@@ -45,6 +45,17 @@ function App() {
 
   return (
     <>
+      <AnimatedCursor
+        color="23, 248, 140"
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={1.7}
+        outerAlpha={0.3}
+        outerStyle={{
+          mixBlendMode: 'exclusion',
+        }}
+      />
       {showWorksPage ? (
         <WorksPage
           handleHideWorksPage={handleHideWorksPage}

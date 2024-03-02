@@ -6,6 +6,9 @@ import WebAgency from '../../assets/images/web-agency.jpg';
 import Restoh from '../../assets/images/restoh.jpg';
 import Efitax from '../../assets/images/efitax.jpg';
 import FermePetelles from '../../assets/images/ferme-des-petelles.jpg';
+import CentreTherapieManuelle from '../../assets/images/centre-therapie-manuelle.jpg';
+import Ilpizzico from '../../assets/images/ilpizzico.jpg';
+import O3Architecture from '../../assets/images/o3-architecture.jpg';
 
 import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
 
@@ -168,7 +171,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 rel="noreferrer"
               >
                 <img
-                  src={FermePetelles}
+                  src={Ilpizzico}
                   alt="Il Pizzico, Restaurant de spécialité Françaises et Italienne"
                 />
               </a>
@@ -202,7 +205,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 rel="noreferrer"
               >
                 <img
-                  src={FermePetelles}
+                  src={CentreTherapieManuelle}
                   alt="Cabinet de kinésithérapie, ostéopathie
                   & médecine traditionnelle chinoise"
                 />
@@ -237,7 +240,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 rel="noreferrer"
               >
                 <img
-                  src={FermePetelles}
+                  src={O3Architecture}
                   alt="O3 Architecture - Cabinet d'architecture au Luxembourg"
                 />
               </a>

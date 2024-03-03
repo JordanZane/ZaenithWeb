@@ -6,6 +6,8 @@
   width: 100%;
   @include transition(0.5s);
   @include fade(fadeLeftX100, 0, 100%, 0.5s, 0s);
+  @include reducedMotionAnimation(fadeLeftX100);
+
   .btn-container {
     padding-bottom: 50px;
     img {
@@ -24,12 +26,14 @@
       margin: 0;
       &.show {
         @include fade(fadeDown20, -20px, 0, 0.3s, 0.2s);
+        @include reducedMotionAnimation(fadeDown20);
       }
     }
     .img-container {
       img {
         &.show {
           @include appearScale(appearScale08, 0.8, 0.8, 0.5s, 0.2s);
+          @include reducedMotionAnimation(appearSCale08);
         }
       }
     }
@@ -57,6 +61,7 @@
       margin: 30px 0;
       &.show {
         @include fade(fadeUp, 10px, 0, 0.3s, 0.5s);
+        @include reducedMotionAnimation(fadeUp);
       }
       a {
         text-decoration: underline;

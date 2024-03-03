@@ -40,6 +40,7 @@ body {
     transform: translate(0, 30px);
     opacity: 0;
     @include fade(fade15, 30px, 0, 0.5s, 0s);
+    @include reducedMotionAnimation(fade15);
     @include respond-to('medium') {
       font-size: 30px;
     }
@@ -135,6 +136,7 @@ body {
       opacity: 1;
       &::after {
         animation: growWidth 0.5s 0.2s linear forwards;
+        @include reducedMotionAnimation(growWidth);
       }
     }
     &::after {
@@ -150,16 +152,19 @@ body {
       position: relative;
       &.show {
         @include fade(fade-15, -15px, 0, 0.5s, 0s);
+        @include reducedMotionAnimation(fade-15);
       }
     }
     .link-container {
       &.show {
         @include fade(fade-15, -15px, 0, 0.5s, 0.7s);
+        @include reducedMotionAnimation(fade-15);
       }
     }
     .img-container img {
       &.show {
         @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.7s);
+        @include reducedMotionAnimation(appearSCale08);
       }
     }
   }

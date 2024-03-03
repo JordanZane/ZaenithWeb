@@ -3,6 +3,7 @@ footer {
   background-color: rgba($color: #fff, $alpha: 0.1);
   &.show {
     @include fade(fadey30, 30px, 0, 0.3s, 0s);
+    @include reducedMotionAnimation(fadey30);
   }
   .logo-container {
     cursor: pointer;

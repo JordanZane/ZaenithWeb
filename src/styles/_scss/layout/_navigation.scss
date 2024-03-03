@@ -7,6 +7,7 @@
   background-color: #12202be0;
   &.show {
     @include fade(fadey-30, -30px, 0, 0.5s, 0s);
+    @include reducedMotionAnimation(fadey-30);
   }
   nav {
     display: flex;
@@ -81,18 +82,23 @@
       }
       &.home-link {
         animation: fadeLeft 0.5s linear forwards;
+        @include reducedMotionAnimation(fadeLeft);
       }
       &.works-link {
         animation: fadeLeft 0.5s 0.1s linear forwards;
+        @include reducedMotionAnimation(fadeLeft);
       }
       &.services-link {
         animation: fadeLeft 0.5s 0.2s linear forwards;
+        @include reducedMotionAnimation(fadeLeft);
       }
       &.about-link {
         animation: fadeLeft 0.5s 0.3s linear forwards;
+        @include reducedMotionAnimation(fadeLeft);
       }
       &.contact-link {
         animation: fadeLeft 0.5s 0.4s linear forwards;
+        @include reducedMotionAnimation(fadeLeft);
       }
     }
   }
@@ -108,18 +114,23 @@
       &.hide {
         &.home-link {
           animation: fadeReverseLeft 0.5s 0.5s linear forwards !important;
+          @include reducedMotionAnimation(fadeReverseLeft);
         }
         &.works-link {
           animation: fadeReverseLeft 0.5s 0.4s linear forwards !important;
+          @include reducedMotionAnimation(fadeReverseLeft);
         }
         &.services-link {
           animation: fadeReverseLeft 0.5s 0.3s linear forwards !important;
+          @include reducedMotionAnimation(fadeReverseLeft);
         }
         &.about-link {
           animation: fadeReverseLeft 0.5s 0.2s linear forwards !important;
+          @include reducedMotionAnimation(fadeReverseLeft);
         }
         &.contact-link {
           animation: fadeReverseLeft 0.5s 0.1s linear forwards !important;
+          @include reducedMotionAnimation(fadeReverseLeft);
         }
       }
 

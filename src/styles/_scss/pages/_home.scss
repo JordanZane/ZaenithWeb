@@ -21,11 +21,13 @@
           margin: 0;
           &.show {
             @include fade(fadeDown20, -20px, 0, 0.3s, 0.2s);
+            @include reducedMotionAnimation(fadeDown20);
           }
         }
         .roles {
           &.show {
             @include fade(fadeUp, 5px, 0, 0.3s, 0.4s);
+            @include reducedMotionAnimation(fadeUp);
           }
           span {
             padding-right: 30px;
@@ -52,6 +54,7 @@
           margin: 30px 0;
           &.show {
             @include fade(fadeUp, 10px, 0, 0.3s, 0.5s);
+            @include reducedMotionAnimation(fadeUp);
           }
           a {
             text-decoration: underline;
@@ -64,6 +67,7 @@
 
             &.show {
               @include appearScale(appearScale08, 0.8, 0.8, 0.5s, 0.2s);
+              @include reducedMotionAnimation(appearScale08);
             }
           }
         }
@@ -71,6 +75,7 @@
           .btn-style {
             &.show {
               @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.8s);
+              @include reducedMotionAnimation(appearSCale08);
             }
           }
         }
@@ -100,11 +105,13 @@
           &.fadeLeft {
             &.show {
               @include fade(fadeLeft30, 0, -30px, 0.5s, 0s);
+              @include reducedMotionAnimation(fadeLeft30);
             }
           }
           &.fadeRight {
             &.show {
               @include fade(fadeRight30, 0, 30px, 0.5s, 0s);
+              @include reducedMotionAnimation(fadeRight30);
             }
           }
           strong {
@@ -123,11 +130,13 @@
         .big-title.fadeLeft {
           &.show {
             @include fade(fadeLeft30, 0, -30px, 0.5s, 0s);
+            @include reducedMotionAnimation(fadeLeft30);
           }
         }
         .big-title.fadeRight {
           &.show {
             @include fade(fadeRight30, 0, 30px, 0.5s, 0s);
+            @include reducedMotionAnimation(fadeRight30);
           }
         }
       }
@@ -159,6 +168,7 @@
         padding: 100px 0;
         &.show {
           @include fade(fade-30, -30px, 0, 0.5s, 0s);
+          @include reducedMotionAnimation(fade-30);
         }
         p {
           font-size: $s-title-font-size;
@@ -217,6 +227,7 @@
       &.show {
         animation: draw 1.75s 0.5s ease-in forwards;
         opacity: 1;
+        @include reducedMotionAnimation(draw);
       }
     }
 
@@ -243,6 +254,7 @@ section#contact {
     font-size: $title-font-size;
     &.show {
       @include fade(fade-30x, -30px, 0, 0.5s, 0s);
+      @include reducedMotionAnimation(fade-30x);
     }
     span {
       color: transparent;
@@ -287,19 +299,24 @@ section#contact {
       margin-bottom: 0;
     }
     .show.name-input {
-      @include fade(fade-30x01, 0, -30px, 0.5s, 0s);
+      @include fade(fade-30x00, 0, -30px, 0.5s, 0s);
+      @include reducedMotionAnimation(fade-30x00);
     }
     .show.email-input {
       @include fade(fade-30x01, 0, -30px, 0.5s, 0.1s);
+      @include reducedMotionAnimation(fade-30x01);
     }
     .show.subject-input {
       @include fade(fade-30x02, 0, -30px, 0.5s, 0.2s);
+      @include reducedMotionAnimation(fade-30x02);
     }
     .show.company-input {
       @include fade(fade-30x03, 0, -30px, 0.5s, 0.3s);
+      @include reducedMotionAnimation(fade-30x03);
     }
     .show.message-input {
       @include fade(fade-30x04, 0, -30px, 0.5s, 0.4s);
+      @include reducedMotionAnimation(fade-30x04);
     }
     .btn-container {
       .btn-style {
@@ -307,6 +324,7 @@ section#contact {
         font-size: $text-font-size;
         &.show {
           @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.4s);
+          @include reducedMotionAnimation(appearSCale08);
         }
       }
     }
@@ -315,6 +333,7 @@ section#contact {
       font-size: 0.825em;
       &.show {
         @include appearScale(appearSCale08, 0, 0.8, 0.3s, 0.5s);
+        @include reducedMotionAnimation(appearSCale08);
       }
     }
   }

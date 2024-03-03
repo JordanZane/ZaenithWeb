@@ -26,6 +26,26 @@ const About = () => {
     autoplay: true,
     autoplaySpeed: 0,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 8,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
   return (
     <section className="section" id="about">

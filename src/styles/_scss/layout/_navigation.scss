@@ -71,6 +71,7 @@
   @include transition(0.5s);
   @include respond-to('phones') {
     transform: translate(-200%, 0);
+    padding-top: 50px;
   }
   &.show {
     transform: translate(0, 0);
@@ -111,6 +112,13 @@
       position: relative;
       padding: 20px 0 10px 150px;
       transform: translate(0, 0);
+      @include respond-to('tablets') {
+        padding: 20px 0 10px 5%;
+      }
+      @include respond-to('tablets') {
+        padding: 20px 0 10px 0;
+        text-align: center;
+      }
       &.hide {
         &.home-link {
           animation: fadeReverseLeft 0.5s 0.5s linear forwards !important;

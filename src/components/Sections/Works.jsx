@@ -111,7 +111,14 @@ const Works = ({ handleShowWorksPage }) => {
             </div>
             <p className="description hidden">
               Intégration de la maquette en Html5/Cs33 & CMS, installation et
-              configuration des modules
+              configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a
@@ -146,7 +153,14 @@ const Works = ({ handleShowWorksPage }) => {
             </div>
             <p className="description hidden">
               Intégration de la maquette en Html5/Cs33 & Wordpress, installation
-              et configuration des modules
+              et configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a

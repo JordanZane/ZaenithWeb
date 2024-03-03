@@ -115,7 +115,14 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
             </div>
             <p className="description">
               Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
-              installation et configuration des modules
+              installation et configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a
@@ -149,7 +156,14 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
             </div>
             <p className="description">
               Intégration de la maquette via Wordpress, installation et
-              configuration des modules
+              configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a
@@ -183,7 +197,14 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
             </div>
             <p className="description">
               Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
-              installation et configuration des modules
+              installation et configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a
@@ -218,7 +239,14 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
             </div>
             <p className="description">
               Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
-              installation et configuration des modules
+              installation et configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a
@@ -252,7 +280,14 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
             </div>
             <p className="description">
               Intégration de la maquette en Html5/Cs33 & CMS d'entreprise,
-              installation et configuration des modules
+              installation et configuration des modules. Réalisé chez{' '}
+              <a
+                href="https://www.intermediatic.com/fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Intermediatic
+              </a>
             </p>
             <div className="btn-container">
               <a

@@ -58,6 +58,9 @@
       &.show {
         @include fade(fadeUp, 10px, 0, 0.3s, 0.5s);
       }
+      a {
+        text-decoration: underline;
+      }
     }
     .img-container {
       img {

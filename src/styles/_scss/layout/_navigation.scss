@@ -69,6 +69,10 @@
   transform: translate(-110%, 0);
   background: $bg-color;
   @include transition(0.5s);
+  @include respond-to('laptops') {
+    z-index: 999;
+  }
+
   @include respond-to('phones') {
     transform: translate(-200%, 0);
     padding-top: 50px;
@@ -115,7 +119,7 @@
       @include respond-to('tablets') {
         padding: 20px 0 10px 5%;
       }
-      @include respond-to('tablets') {
+      @include respond-to('phones') {
         padding: 20px 0 10px 0;
         text-align: center;
       }

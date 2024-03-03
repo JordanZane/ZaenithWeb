@@ -270,6 +270,7 @@ section#contact {
         background-color: rgba(255, 255, 255, 0.1);
         border: unset;
         color: $color-white;
+        font-size: $text-font-size;
         &:focus {
           outline: unset;
         }
@@ -298,6 +299,8 @@ section#contact {
     }
     .btn-container {
       .btn-style {
+        background: unset;
+        font-size: $text-font-size;
         &.show {
           @include appearScale(appearSCale08, 0, 0.8, 0.5s, 0.4s);
         }

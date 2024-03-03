@@ -11,6 +11,11 @@ footer {
   .footer-content {
     display: flex;
     align-items: center;
+    @include respond-to('tablets') {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     p {
       margin: auto;
       a {

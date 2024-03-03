@@ -334,6 +334,9 @@ section#contact {
       @include fade(fade-30x, -30px, 0, 0.5s, 0s);
       @include reducedMotionAnimation(fade-30x);
     }
+    @include respond-to('phones') {
+      font-size: 26px;
+    }
     span {
       color: transparent;
       background: $gradient-primay;

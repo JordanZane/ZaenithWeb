@@ -19,6 +19,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
     justify-content: space-between;
+    @include respond-to('tablets') {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 25px;
+    }
+    @include respond-to('phones') {
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 15px;
+    }
   }
   .section-content {
     h3 {

@@ -278,6 +278,10 @@ section#contact {
           color: $color-black;
         }
       }
+      input:focus,
+      textarea:focus {
+        box-shadow: 0 0 5px rgb(26, 243, 181, 0.78);
+      }
     }
     .message-input {
       margin-bottom: 0;

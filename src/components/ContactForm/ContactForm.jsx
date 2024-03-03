@@ -30,7 +30,7 @@ const ContactForm = () => {
       'Content-Type': 'application/json',
     };
 
-    fetch('http://localhost:3000/sendemail', {
+    fetch('http://localhost:3001/sendemail', {
       method: 'POST',
       headers: headers,
       body: JSON.stringify(formDatas),

@@ -7,7 +7,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   overflow-x: hidden;
-  @include respond-to('small') {
+  @include respond-to('phones') {
     font-size: 16px;
   }
   .big-title {
@@ -59,11 +59,8 @@ body {
     line-height: 0.82em;
     margin: 0;
     letter-spacing: 0.1em;
-    @include respond-to('medium') {
-      font-size: 25px;
-    }
-    @include respond-to('small') {
-      font-size: 20px;
+    @include respond-to('phones') {
+      font-size: 26px;
     }
   }
 
@@ -73,10 +70,8 @@ body {
     font-weight: 700;
     line-height: 0.82em;
     letter-spacing: 0.1em;
-    @include respond-to('small') {
+    @include respond-to('phones') {
       font-size: 22px;
-      margin: 4px 0;
-      line-height: 27px;
     }
   }
 
@@ -132,6 +127,9 @@ body {
   .section {
     padding: 150px 0;
     position: relative;
+    @include respond-to('phones') {
+      padding: 75px 0;
+    }
   }
 
   .section-content {
@@ -171,6 +169,11 @@ body {
       &.show {
         @include fade(fade-15, -15px, 0, 0.5s, 0.7s);
         @include reducedMotionAnimation(fade-15);
+      }
+      img {
+        @include respond-to('phones') {
+          width: 12px;
+        }
       }
     }
     .img-container img {

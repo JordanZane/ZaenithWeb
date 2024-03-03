@@ -10,12 +10,27 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
         justify-content: space-between;
+        @include respond-to('phones') {
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 15px;
+        }
       }
       .work-container {
         max-width: 626px;
+        &:last-child {
+          @include respond-to('phones') {
+            margin-bottom: 0;
+          }
+        }
+        @include respond-to('phones') {
+          margin-bottom: 100px;
+        }
         &.odd-work {
           padding-top: 50%;
           margin-left: auto;
+          @include respond-to('phones') {
+            padding-top: 0;
+          }
         }
         h3 {
           padding: 0;
@@ -98,8 +113,29 @@
         align-items: center;
         margin-bottom: 200px;
         position: relative;
+        &.odd {
+          .service-desc {
+            @include respond-to('phones') {
+              order: 3;
+            }
+          }
+          .line {
+            @include respond-to('phones') {
+              order: 2;
+            }
+          }
+          .big-title {
+            @include respond-to('phones') {
+              order: 1;
+            }
+          }
+        }
         &:last-child {
           margin-bottom: 0;
+        }
+        @include respond-to('phones') {
+          text-align: center;
+          flex-direction: column;
         }
         .service-desc {
           max-width: 500px;
@@ -127,6 +163,14 @@
           background-color: $color-white;
           width: 100%;
           margin: 0 30px;
+          @include respond-to('phones') {
+            margin: 15px 30px 5px 30px;
+          }
+        }
+        .big-title {
+          @include respond-to('phones') {
+            font-size: 38px;
+          }
         }
         .big-title.fadeLeft {
           &.show {

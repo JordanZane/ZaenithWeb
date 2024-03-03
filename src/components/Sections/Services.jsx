@@ -25,7 +25,7 @@ const Services = () => {
               adaptée à tous les utilisateurs.
             </p>
           </div>
-          <div className="service-content">
+          <div className="service-content odd">
             <p className="service-desc fadeLeft hidden">
               Des <strong>animations</strong> et des{' '}
               <strong>transitions</strong> soigneusement pensées pour élever

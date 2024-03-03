@@ -41,11 +41,14 @@ body {
     opacity: 0;
     @include fade(fade15, 30px, 0, 0.5s, 0s);
     @include reducedMotionAnimation(fade15);
-    @include respond-to('medium') {
-      font-size: 30px;
+    @include respond-to('tablets') {
+      font-size: 85.6px;
     }
-    @include respond-to('small') {
-      font-size: 25px;
+    @include respond-to('phones') {
+      font-size: 63.6px;
+    }
+    @include respond-to('xs-phones') {
+      font-size: 43.6px;
     }
   }
 
@@ -95,6 +98,9 @@ body {
     line-height: 1.5em;
     margin: 10px 0;
     color: $color-white;
+    @include respond-to('phones') {
+      font-size: 16px;
+    }
   }
 
   a {
@@ -110,10 +116,16 @@ body {
     margin: auto;
     padding: 0 25px;
     @include respond-to('desktops') {
-      max-width: 1200px;
+      max-width: 1400px;
     }
     @include respond-to('laptops') {
       max-width: 1000px;
+    }
+    @include respond-to('tablets') {
+      max-width: 720px;
+    }
+    @include respond-to('phones') {
+      max-width: 100%;
     }
   }
 
@@ -228,6 +240,14 @@ body {
   border-radius: 50%;
   opacity: 0.4;
   z-index: 4;
+  @include respond-to('tablets') {
+    left: -36%;
+    top: -38%;
+  }
+  @include respond-to('phones') {
+    left: -50%;
+    top: -40%;
+  }
 }
 
 .blue-blur-circle {
@@ -241,6 +261,16 @@ body {
   border-radius: 50%;
   opacity: 0.4;
   z-index: 4;
+  @include respond-to('tablets') {
+    right: -33%;
+    bottom: -1%;
+  }
+  @include respond-to('phones') {
+    right: -35%;
+    bottom: -25%;
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .hidden {

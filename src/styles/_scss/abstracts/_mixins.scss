@@ -1,5 +1,10 @@
 /*Breakpoints*/
 @mixin respond-to($breakpoint) {
+  @if $breakpoint == 'xs-phones' {
+    @media (max-width: 300px) {
+      @content;
+    }
+  }
   @if $breakpoint == 'phones' {
     @media (max-width: 600px) {
       @content;
@@ -10,15 +15,11 @@
       @content;
     }
   } @else if $breakpoint == 'laptops' {
-    @media (max-width: 1199px) {
+    @media (max-width: 1200px) {
       @content;
     }
   } @else if $breakpoint == 'desktops' {
     @media (max-width: 1600px) {
-      @content;
-    }
-  } @else if $breakpoint == 'large' {
-    @media (min-width: 1800px) {
       @content;
     }
   }

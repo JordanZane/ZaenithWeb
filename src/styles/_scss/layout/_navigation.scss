@@ -1,6 +1,6 @@
 .navigation {
   padding: 10px 0 3px 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 5;
@@ -70,7 +70,7 @@
   background: $bg-color;
   @include transition(0.5s);
   @include respond-to('phones') {
-    transform: translate(-150%, 0);
+    transform: translate(-200%, 0);
   }
   &.show {
     transform: translate(0, 0);

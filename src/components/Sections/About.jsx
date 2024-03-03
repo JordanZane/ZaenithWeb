@@ -56,40 +56,75 @@ const About = () => {
       <div className="skills-container">
         <Slider {...settings}>
           <div>
-            <img src={HtmlLogo} alt="Html5" title="Html5" />
+            <img src={HtmlLogo} alt="Html5" title="Html5" loading="lazy" />
           </div>
           <div>
-            <img src={CssLogo} alt="Css3" title="Css3" />
+            <img src={CssLogo} alt="Css3" title="Css3" loading="lazy" />
           </div>
           <div>
-            <img src={JsLogo} alt="JavaScript" title="JavaScript" />
+            <img
+              src={JsLogo}
+              alt="JavaScript"
+              title="JavaScript"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={BootstrapLogo} alt="Bootstrap 5" title="Bootstrap 5" />
+            <img
+              src={BootstrapLogo}
+              alt="Bootstrap 5"
+              title="Bootstrap 5"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={SassLogo} alt="Sass" title="Sass" />
+            <img src={SassLogo} alt="Sass" title="Sass" loading="lazy" />
           </div>
           <div>
-            <img src={ReactLogo} alt="React Js" title="React Js" />
+            <img
+              src={ReactLogo}
+              alt="React Js"
+              title="React Js"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={XdLogo} alt="Adobe XD" title="Adobe XD" />
+            <img src={XdLogo} alt="Adobe XD" title="Adobe XD" loading="lazy" />
           </div>
           <div>
-            <img src={PhotoshopLogo} alt="Photoshop" title="Photoshop" />
+            <img
+              src={PhotoshopLogo}
+              alt="Photoshop"
+              title="Photoshop"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={FigmaLogo} alt="Figma" title="Figma" />
+            <img src={FigmaLogo} alt="Figma" title="Figma" loading="lazy" />
           </div>
           <div>
-            <img src={PrestashopLogo} alt="Prestashop" title="Prestashop" />
+            <img
+              src={PrestashopLogo}
+              alt="Prestashop"
+              title="Prestashop"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={ShopifyLogo} alt="Shopify" title="Shopify" />
+            <img
+              src={ShopifyLogo}
+              alt="Shopify"
+              title="Shopify"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={WordpressLogo} alt="Wordpress" title="Wordpress" />
+            <img
+              src={WordpressLogo}
+              alt="Wordpress"
+              title="Wordpress"
+              loading="lazy"
+            />
           </div>
         </Slider>
       </div>

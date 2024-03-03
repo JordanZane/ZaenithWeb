@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-
-import Home from './pages/Home/Home';
-import Navigation from './components/Navigation/Navigation';
-import WorksPage from './pages/Works/WorksPage';
-import Footer from './components/Sections/Footer';
+import React, { useState, lazy, Suspense } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import './styles/_scss/main.scss';
+
+const Home = lazy(() => import('./pages/Home/Home'));
+const WorksPage = lazy(() => import('./pages/Works/WorksPage'));
+const Footer = lazy(() => import('./components/Sections/Footer'));
+
+const Navigation = lazy(() => import('./components/Navigation/Navigation'));
 
 function App() {
   const [showWorksPage, setShowWorksPage] = useState(false);
@@ -56,18 +57,26 @@ function App() {
           mixBlendMode: 'exclusion',
         }}
       ></AnimatedCursor>
-      {showWorksPage ? (
-        <WorksPage
-          handleHideWorksPage={handleHideWorksPage}
-          handleContactLink={handleContactLink}
-        />
-      ) : (
-        <>
-          <Navigation />
-          <Home handleShowWorksPage={handleShowWorksPage} />
-          <Footer />
-        </>
-      )}
+      <Suspense
+        fallback={
+          <div>
+            <h1>Loading...</h1>
+          </div>
+        }
+      >
+        {showWorksPage ? (
+          <WorksPage
+            handleHideWorksPage={handleHideWorksPage}
+            handleContactLink={handleContactLink}
+          />
+        ) : (
+          <>
+            <Navigation />
+            <Home handleShowWorksPage={handleShowWorksPage} />
+            <Footer />
+          </>
+        )}
+      </Suspense>
     </>
   );
 }

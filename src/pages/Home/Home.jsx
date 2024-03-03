@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
-import Header from '../../components/Sections/Header';
-import Works from '../../components/Sections/Works';
-import Services from '../../components/Sections/Services';
-import About from '../../components/Sections/About';
-import Contact from '../../components/Sections/Contact';
+const ScrollAnim = React.lazy(() =>
+  import('../../components/ScrollAnim/ScrollAnim')
+);
 
-import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
+const Header = React.lazy(() => import('../../components/Sections/Header'));
+const Works = React.lazy(() => import('../../components/Sections/Works'));
+const Services = React.lazy(() => import('../../components/Sections/Services'));
+const About = React.lazy(() => import('../../components/Sections/About'));
+const Contact = React.lazy(() => import('../../components/Sections/Contact'));
 
-const Home = ({ handleShowWorksPage, handleMouseEnter, handleMouseLeave }) => {
+const Home = ({ handleShowWorksPage }) => {
   return (
     <div className="home">
-      <ScrollAnim />
-      <Header />
-      <Works handleShowWorksPage={handleShowWorksPage} />
-      <Services />
-      <About />
-      <Contact />
+      <Suspense>
+        <ScrollAnim />
+        <Header />
+        <Works handleShowWorksPage={handleShowWorksPage} />
+        <Services />
+        <About />
+        <Contact />
+      </Suspense>
     </div>
   );
 };

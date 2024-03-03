@@ -31,6 +31,7 @@ const Works = ({ handleShowWorksPage }) => {
                   src={WebAgency}
                   alt="Web Agency - Template for Web Agency"
                   className="hidden"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -66,6 +67,7 @@ const Works = ({ handleShowWorksPage }) => {
                   src={Restoh}
                   alt="Restoh - Template for French restaurant"
                   className="hidden"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -101,6 +103,7 @@ const Works = ({ handleShowWorksPage }) => {
                   src={Efitax}
                   alt="Efitax - Bureau comptable digitalisé"
                   className="hidden"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -143,6 +146,7 @@ const Works = ({ handleShowWorksPage }) => {
                   src={FermePetelles}
                   alt="Ferme des Pételles - Ferme pédagogique"
                   className="hidden"
+                  loading="lazy"
                 />
               </a>
             </div>

@@ -40,6 +40,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 <img
                   src={WebAgency}
                   alt="Web Agency - Template for Web Agency"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -74,6 +75,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 <img
                   src={Restoh}
                   alt="Restoh - Template for French restaurant"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -105,7 +107,11 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Efitax} alt="Efitax - Bureau comptable digitalisé" />
+                <img
+                  src={Efitax}
+                  alt="Efitax - Bureau comptable digitalisé"
+                  loading="lazy"
+                />
               </a>
             </div>
             <div className="roles">
@@ -146,6 +152,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 <img
                   src={FermePetelles}
                   alt="Ferme des Pételles - Ferme pédagogique"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -187,6 +194,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 <img
                   src={Ilpizzico}
                   alt="Il Pizzico, Restaurant de spécialité Françaises et Italienne"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -229,6 +237,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                   src={CentreTherapieManuelle}
                   alt="Cabinet de kinésithérapie, ostéopathie
                   & médecine traditionnelle chinoise"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -270,6 +279,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
                 <img
                   src={O3Architecture}
                   alt="O3 Architecture - Cabinet d'architecture au Luxembourg"
+                  loading="lazy"
                 />
               </a>
             </div>

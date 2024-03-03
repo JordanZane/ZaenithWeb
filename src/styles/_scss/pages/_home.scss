@@ -115,17 +115,17 @@
         position: relative;
         &.odd {
           .service-desc {
-            @include respond-to('phones') {
+            @include respond-to('tablets') {
               order: 3;
             }
           }
           .line {
-            @include respond-to('phones') {
+            @include respond-to('tablets') {
               order: 2;
             }
           }
           .big-title {
-            @include respond-to('phones') {
+            @include respond-to('tablets') {
               order: 1;
             }
           }
@@ -133,7 +133,7 @@
         &:last-child {
           margin-bottom: 0;
         }
-        @include respond-to('phones') {
+        @include respond-to('tablets') {
           text-align: center;
           flex-direction: column;
         }
@@ -163,11 +163,17 @@
           background-color: $color-white;
           width: 100%;
           margin: 0 30px;
-          @include respond-to('phones') {
+          @include respond-to('tablets') {
             margin: 15px 30px 5px 30px;
           }
         }
         .big-title {
+          @include respond-to('desktops') {
+            font-size: 62px;
+          }
+          @include respond-to('tablets') {
+            font-size: 78px;
+          }
           @include respond-to('phones') {
             font-size: 38px;
           }

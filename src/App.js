@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <AnimatedCursor
-        color="23, 248, 140"
+        color={'23, 248, 140'}
         innerSize={8}
         outerSize={35}
         innerScale={1}
@@ -55,7 +55,7 @@ function App() {
         outerStyle={{
           mixBlendMode: 'exclusion',
         }}
-      />
+      ></AnimatedCursor>
       {showWorksPage ? (
         <WorksPage
           handleHideWorksPage={handleHideWorksPage}

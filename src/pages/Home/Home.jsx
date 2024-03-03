@@ -8,7 +8,7 @@ import Contact from '../../components/Sections/Contact';
 
 import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
 
-const Home = ({ handleShowWorksPage }) => {
+const Home = ({ handleShowWorksPage, handleMouseEnter, handleMouseLeave }) => {
   return (
     <div className="home">
       <ScrollAnim />

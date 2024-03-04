@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import EmailSuccessPopup from '../Popups/EmailSuccessPopup';
+import EmailFailedPopup from '../Popups/EmailFailedPopup';
 
 const ContactForm = () => {
   const [userName, setUserName] = useState('');
@@ -6,10 +8,12 @@ const ContactForm = () => {
   const [subject, setSubject] = useState('');
   const [companyName, setCompanyName] = useState('');
   const [userMessage, setUserMessage] = useState('');
+  const [submittingForm, setSubmittingForm] = useState(false);
+  const [handleSuccessPopup, setHandleSuccessPopup] = useState(false);
+  const [handleFailedPopup, setHandleFailedPopup] = useState(false);
 
   const handleSubmitContactForm = (e) => {
     e.preventDefault();
-    console.log('Submitting form');
 
     const userNameData = userName;
     const userEmailData = userEmail;
@@ -30,6 +34,8 @@ const ContactForm = () => {
       'Content-Type': 'application/json',
     };
 
+    setSubmittingForm(true);
+
     fetch('http://localhost:3001/send-email', {
       method: 'POST',
       headers: headers,
@@ -37,20 +43,31 @@ const ContactForm = () => {
     })
       .then((response) => {
         if (response.ok) {
-          console.log('Response OK sending form');
           setUserName('');
           setUserEmail('');
           setSubject('');
           setCompanyName('');
           setSubject('');
           setUserMessage('');
+          setSubmittingForm(false);
+          setHandleSuccessPopup(true);
         } else {
           console.log('Error when sending email');
+          setSubmittingForm(false);
+          setHandleFailedPopup(true);
         }
       })
       .catch((error) => {
         console.log('Error when sending email : ', error);
+        setSubmittingForm(false);
+        setHandleFailedPopup(true);
       });
+  };
+
+  const handleClosePopups = (e) => {
+    e.preventDefault();
+    setHandleSuccessPopup(false);
+    setHandleFailedPopup(false);
   };
 
   return (
@@ -121,8 +138,20 @@ const ContactForm = () => {
       <p className="required-field hidden">*Champs requis</p>
       <div className="btn-container">
         <button className="btn-style hidden" type="submit">
-          C'est parti !
+          {submittingForm ? 'Envoi en cours' : "C'est parti !"}
         </button>
+      </div>
+      <div className="popups-container">
+        {handleSuccessPopup ? (
+          <EmailSuccessPopup handleClosePopups={handleClosePopups} />
+        ) : (
+          ''
+        )}
+        {handleFailedPopup ? (
+          <EmailFailedPopup handleClosePopups={handleClosePopups} />
+        ) : (
+          ''
+        )}
       </div>
     </form>
   );

@@ -417,5 +417,30 @@ section#contact {
         @include reducedMotionAnimation(appearSCale08);
       }
     }
+    .popups-container {
+      width: 100%;
+      .success-popup {
+        width: 100%;
+        text-align: center;
+        background: #17f88c52;
+        border-radius: 6px;
+        padding: 4px;
+        margin-top: 30px;
+      }
+      .failed-popup {
+        width: 100%;
+        text-align: center;
+        background: #d9313196;
+        border-radius: 6px;
+        padding: 4px;
+        margin-top: 30px;
+      }
+      p {
+        margin-top: 0;
+      }
+      .btn-container {
+        text-align: end;
+      }
+    }
   }
 }

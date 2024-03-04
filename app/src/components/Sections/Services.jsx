@@ -18,11 +18,11 @@ const Services = () => {
             <div className="line"></div>
             <p className="service-desc fadeRight hidden">
               <strong>Sites vitrines</strong> ou{' '}
-              <strong>plateformes E-commerce</strong>, je m'occupe de
-              l'intégration harmonieuse de vos maquettes, assurant une
-              expérience fluide sur tous les appareils. Chaque élément est
-              soigneusement positionné, créant ainsi une navigation intuitive et
-              adaptée à tous les utilisateurs.
+              <strong>plateformes E-commerce</strong>, je créer des sites web{' '}
+              <strong>modernes</strong> et <strong>performants</strong>, je
+              m'occupe de l'intégration harmonieuse de vos maquettes, assurant
+              une expérience fluide sur tous les appareils, créant ainsi une
+              navigation intuitive et adaptée à tous les utilisateurs.
             </p>
           </div>
           <div className="service-content odd">
@@ -40,7 +40,7 @@ const Services = () => {
             <p className="big-title fadeLeft hidden">SEO</p>
             <div className="line"></div>
             <p className="service-desc fadeRight hidden">
-              Je déploie une approche <strong>SEO stratégique </strong> pour
+              Je m'assure de l'optimisation de votre <strong>SEO</strong> pour
               renforcer la présence en ligne de votre marque. En optimisant le{' '}
               <strong>copywriting</strong>, <strong>les sitemaps</strong>, les{' '}
               <strong>meta tags</strong> , et les{' '}

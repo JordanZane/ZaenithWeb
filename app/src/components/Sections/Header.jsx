@@ -21,8 +21,8 @@ const Header = () => {
           </p>
           <p className="intro hidden">
             Transformons vos idées en réalité numérique. Projetez votre vision
-            dans le web avec des sites vitrines et e-commerce qui marquent les
-            esprits et favorisent la croissance de votre activité en ligne.
+            dans le web avec des sites vitrines et e-commerce modernes et
+            performants qui favorisent la croissance de votre activité en ligne.
           </p>
           <div className="btn-container">
             <Link
@@ -33,7 +33,7 @@ const Header = () => {
               offset={-100}
               duration={500}
             >
-              Discutons de votre projet
+              Je me lance !
             </Link>
           </div>
         </div>

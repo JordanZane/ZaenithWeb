@@ -41,8 +41,8 @@ const Works = ({ handleShowWorksPage }) => {
               <span>Développement Frontend</span>
             </div>
             <p className="description hidden">
-              Création de maquette et réalisation d'un template d'agence en
-              React Js (Single Page application)
+              Création de maquette et réalisation d'un template d'une agence web
+              en React Js (Single Page application)
             </p>
             <div className="btn-container">
               <a
@@ -113,8 +113,9 @@ const Works = ({ handleShowWorksPage }) => {
               <span>Développement Frontend</span>
             </div>
             <p className="description hidden">
-              Intégration de la maquette en Html5/Cs33 & CMS, installation et
-              configuration des modules. Réalisé chez{' '}
+              Intégration de la maquette pour un bureau comptable digitalisé au
+              Luxembourg. Html5/Cs33 & CMS, installation et configuration des
+              modules. Réalisé chez{' '}
               <a
                 href="https://www.intermediatic.com/fr"
                 target="_blank"
@@ -156,8 +157,9 @@ const Works = ({ handleShowWorksPage }) => {
               <span>Développement Frontend</span>
             </div>
             <p className="description hidden">
-              Intégration de la maquette en Html5/Cs33 & Wordpress, installation
-              et configuration des modules. Réalisé chez{' '}
+              Intégration de la maquette d'une ferme pédagogique en Belgique.
+              Html5/Cs33 & Wordpress, installation et configuration des modules.
+              Réalisé chez{' '}
               <a
                 href="https://www.intermediatic.com/fr"
                 target="_blank"

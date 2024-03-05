@@ -101,6 +101,18 @@
           border-color: $color-primary;
         }
       }
+      @include respond-to('desktops') {
+        min-height: 370.38px;
+      }
+      @include respond-to('laptops') {
+        min-height: 264.14px;
+      }
+      @include respond-to('tablets') {
+        min-height: 237.28px;
+      }
+      @include respond-to('phones') {
+        min-height: 329.3px;
+      }
     }
   }
 }

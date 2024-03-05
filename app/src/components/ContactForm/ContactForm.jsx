@@ -12,6 +12,8 @@ const ContactForm = () => {
   const [handleSuccessPopup, setHandleSuccessPopup] = useState(false);
   const [handleFailedPopup, setHandleFailedPopup] = useState(false);
 
+  const apiUrl = process.env.REACT_APP_API_URL;
+
   const handleSubmitContactForm = (e) => {
     e.preventDefault();
 
@@ -36,7 +38,7 @@ const ContactForm = () => {
 
     setSubmittingForm(true);
 
-    fetch('http://localhost:3001/send-email', {
+    fetch(`${apiUrl}/send-email`, {
       method: 'POST',
       headers: headers,
       body: JSON.stringify(formDatas),

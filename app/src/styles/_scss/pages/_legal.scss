@@ -1,0 +1,27 @@
+.legal-page {
+  padding-top: 100px;
+  .btn-container {
+    padding-bottom: 50px;
+    img {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .section {
+    padding-top: 50px;
+    .section-content {
+      margin-top: 50px;
+      .legal-section {
+        margin-bottom: 50px;
+        p {
+          a {
+            text-decoration: underline;
+          }
+        }
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

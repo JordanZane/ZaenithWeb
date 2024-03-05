@@ -14,7 +14,7 @@ import ScrollAnim from '../../components/ScrollAnim/ScrollAnim';
 
 const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
   return (
-    <div className="works-page" id="worksPage">
+    <main className="works-page" id="worksPage">
       <ScrollAnim />
       <div className="container">
         <div className="btn-container">
@@ -331,7 +331,7 @@ const WorksPage = ({ handleHideWorksPage, handleContactLink }) => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

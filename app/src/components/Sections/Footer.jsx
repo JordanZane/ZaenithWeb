@@ -3,7 +3,7 @@ import Logo from '../../assets/images/logo-full.svg';
 
 import { Link } from 'react-scroll';
 
-const Footer = () => {
+const Footer = ({ handleShowLegalPage }) => {
   return (
     <footer className="hidden">
       <div className="container">
@@ -21,7 +21,9 @@ const Footer = () => {
           </div>
           <p>
             Tout droits réservés - Design & développement par Jordan Zanetti -{' '}
-            <a href="/legal">Mentions légales</a>
+            <a href="/" onClick={handleShowLegalPage}>
+              Mentions légales
+            </a>
           </p>
         </div>
       </div>

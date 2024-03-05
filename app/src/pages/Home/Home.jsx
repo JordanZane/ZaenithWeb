@@ -12,7 +12,7 @@ const Contact = React.lazy(() => import('../../components/Sections/Contact'));
 
 const Home = ({ handleShowWorksPage }) => {
   return (
-    <div className="home test">
+    <main className="home">
       <Suspense>
         <ScrollAnim />
         <Header />
@@ -21,7 +21,7 @@ const Home = ({ handleShowWorksPage }) => {
         <About />
         <Contact />
       </Suspense>
-    </div>
+    </main>
   );
 };
 

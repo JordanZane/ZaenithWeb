@@ -5,11 +5,13 @@ import './styles/_scss/main.scss';
 const Home = lazy(() => import('./pages/Home/Home'));
 const WorksPage = lazy(() => import('./pages/Works/WorksPage'));
 const Footer = lazy(() => import('./components/Sections/Footer'));
+const LegalPage = lazy(() => import('./pages/Legal/Legal'));
 
 const Navigation = lazy(() => import('./components/Navigation/Navigation'));
 
 function App() {
   const [showWorksPage, setShowWorksPage] = useState(false);
+  const [showLegalPage, setShowLegalPage] = useState(false);
 
   const handleShowWorksPage = (e) => {
     e.preventDefault();
@@ -31,6 +33,28 @@ function App() {
         homeElement.scrollIntoView({ behavior: 'smooth' });
       }
     }, 0);
+  };
+
+  const handleShowLegalPage = (e) => {
+    e.preventDefault();
+    setShowLegalPage(true);
+    setTimeout(() => {
+      const legalPage = document.getElementById('legal-page');
+      if (legalPage) {
+        legalPage.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
+  };
+
+  const handleHideLegalPage = (e) => {
+    e.preventDefault();
+    setShowLegalPage(false);
+    setTimeout(() => {
+      const legalPage = document.getElementById('legal-page');
+      if (legalPage) {
+        legalPage.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
   };
 
   const handleContactLink = (e) => {
@@ -64,7 +88,9 @@ function App() {
           </div>
         }
       >
-        {showWorksPage ? (
+        {showLegalPage ? (
+          <LegalPage handleHideLegalPage={handleHideLegalPage} />
+        ) : showWorksPage ? (
           <WorksPage
             handleHideWorksPage={handleHideWorksPage}
             handleContactLink={handleContactLink}
@@ -73,7 +99,7 @@ function App() {
           <>
             <Navigation />
             <Home handleShowWorksPage={handleShowWorksPage} />
-            <Footer />
+            <Footer handleShowLegalPage={handleShowLegalPage} />
           </>
         )}
       </Suspense>

@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import './styles/_scss/main.scss';
 
@@ -12,6 +12,22 @@ const Navigation = lazy(() => import('./components/Navigation/Navigation'));
 function App() {
   const [showWorksPage, setShowWorksPage] = useState(false);
   const [showLegalPage, setShowLegalPage] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      const isMobileDevice = window.matchMedia('(max-width: 1024px)').matches;
+      setIsMobile(isMobileDevice);
+    };
+
+    checkIfMobile();
+
+    window.addEventListener('resize', checkIfMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
 
   const handleShowWorksPage = (e) => {
     e.preventDefault();
@@ -70,17 +86,20 @@ function App() {
 
   return (
     <>
-      <AnimatedCursor
-        color={'23, 248, 140'}
-        innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={1.7}
-        outerAlpha={0.3}
-        outerStyle={{
-          mixBlendMode: 'exclusion',
-        }}
-      ></AnimatedCursor>
+      {!isMobile && (
+        <AnimatedCursor
+          color={'23, 248, 140'}
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={1.7}
+          outerAlpha={0.3}
+          outerStyle={{
+            mixBlendMode: 'exclusion',
+          }}
+        ></AnimatedCursor>
+      )}
+
       <Suspense
         fallback={
           <div>

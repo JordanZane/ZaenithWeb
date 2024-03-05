@@ -1,6 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import './styles/_scss/main.scss';
+import Loader from './components/Loader/Loader';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const WorksPage = lazy(() => import('./pages/Works/WorksPage'));
@@ -13,20 +14,26 @@ function App() {
   const [showWorksPage, setShowWorksPage] = useState(false);
   const [showLegalPage, setShowLegalPage] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     const checkIfMobile = () => {
       const isMobileDevice = window.matchMedia('(max-width: 1024px)').matches;
       setIsMobile(isMobileDevice);
     };
-
     checkIfMobile();
-
     window.addEventListener('resize', checkIfMobile);
-
     return () => {
       window.removeEventListener('resize', checkIfMobile);
     };
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const handleShowWorksPage = (e) => {
@@ -99,29 +106,26 @@ function App() {
           }}
         ></AnimatedCursor>
       )}
-
-      <Suspense
-        fallback={
-          <div>
-            <h1>Loading...</h1>
-          </div>
-        }
-      >
-        {showLegalPage ? (
-          <LegalPage handleHideLegalPage={handleHideLegalPage} />
-        ) : showWorksPage ? (
-          <WorksPage
-            handleHideWorksPage={handleHideWorksPage}
-            handleContactLink={handleContactLink}
-          />
-        ) : (
-          <>
-            <Navigation />
-            <Home handleShowWorksPage={handleShowWorksPage} />
-            <Footer handleShowLegalPage={handleShowLegalPage} />
-          </>
-        )}
-      </Suspense>
+      {showLoader ? (
+        <Loader />
+      ) : (
+        <Suspense fallback={<div></div>}>
+          {showLegalPage ? (
+            <LegalPage handleHideLegalPage={handleHideLegalPage} />
+          ) : showWorksPage ? (
+            <WorksPage
+              handleHideWorksPage={handleHideWorksPage}
+              handleContactLink={handleContactLink}
+            />
+          ) : (
+            <>
+              <Navigation />
+              <Home handleShowWorksPage={handleShowWorksPage} />
+              <Footer handleShowLegalPage={handleShowLegalPage} />
+            </>
+          )}
+        </Suspense>
+      )}
     </>
   );
 }

@@ -9,6 +9,9 @@
 
   .section {
     padding-top: 50px;
+    .section-header::after {
+      width: 100%;
+    }
     .section-content {
       margin-top: 50px;
       .legal-section {

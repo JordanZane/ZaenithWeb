@@ -154,7 +154,16 @@ const Legal = ({ handleHideLegalPage }) => {
                   le générateur de la-webeuse.com
                 </a>
               </p>
-              <p>Freepiks</p>
+              <p>
+                Images :{' '}
+                <a
+                  href="https://fr.freepik.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Freepiks
+                </a>
+              </p>
             </div>
           </div>
         </div>

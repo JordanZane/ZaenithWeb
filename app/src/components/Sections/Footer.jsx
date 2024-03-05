@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Footer = ({ handleShowLegalPage }) => {
   return (
-    <footer className="hidden">
+    <footer>
       <div className="container">
         <div className="footer-content">
           <div className="logo-container">

@@ -40,3 +40,5 @@ Here are the main technologies and libraries used in this project :
 **Nodemailer :** Module for sending emails.
 
 **Validator :** String validation and sanitization library.
+
+=> Visit my website : https://zaenithweb.fr/

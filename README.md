@@ -25,8 +25,6 @@ Here are the main technologies and libraries used in this project :
 ### Backend
 **Express :** Web framework for Node.js.
 
-**Axios :** Promise-based HTTP client for the browser and Node.js.
-
 **Body-parser :** Middleware for parsing incoming request bodies.
 
 **Cookie-parser :** Middleware for parsing cookies.

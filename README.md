@@ -12,7 +12,11 @@ Contact: Contact form for easy communication.
 ## Technologies Used
 ### Here are the main technologies and libraries used in this project:
 React: JavaScript library for building user interfaces.
+
 Sass: CSS preprocessor for more modular and maintainable styles.
+
 React Slick: Component for creating image and content carousels.
+
 React Scroll: For smooth, animated scrolling between sections.
+
 React Animated Cursor: For animated and customized cursors.

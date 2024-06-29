@@ -4,6 +4,8 @@ import Logo from '../../assets/images/logo-full.svg';
 import { Link } from 'react-scroll';
 
 const Footer = ({ handleShowLegalPage }) => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer>
       <div className="container">
@@ -23,7 +25,8 @@ const Footer = ({ handleShowLegalPage }) => {
             Tout droits réservés - Design & développement par Jordan Zanetti -{' '}
             <a href="/" onClick={handleShowLegalPage}>
               Mentions légales
-            </a>
+            </a>{' '}
+            - {currentYear}
           </p>
         </div>
       </div>

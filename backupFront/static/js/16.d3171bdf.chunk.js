@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[16],{3016:(e,t,s)=>{s.r(t),s.d(t,{default:()=>o});var n=s(9060);const o=()=>((0,n.useEffect)((()=>{const e=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting?e.target.classList.add("show"):e.target.classList.remove("show")}))}));document.querySelectorAll(".hidden").forEach((t=>e.observe(t)));const t=()=>{window.location.reload()};return window.addEventListener("popstate",t),()=>{e.disconnect(),window.removeEventListener("popstate",t)}}),[]),null)}}]);
+//# sourceMappingURL=16.d3171bdf.chunk.js.map

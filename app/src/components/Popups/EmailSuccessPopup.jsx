@@ -7,7 +7,7 @@ const EmailSuccessPopup = ({ handleClosePopups }) => {
         X
       </div>
       <p>
-        E-mail envoyé avec succés ! Je vous répondrais dans les plus délais.
+        E-mail envoyé avec succès, je vous répondrai dans les plus brefs délais.
       </p>
     </div>
   );

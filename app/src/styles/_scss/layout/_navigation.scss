@@ -74,6 +74,7 @@
   @include transition(0.5s);
   @include respond-to('laptops') {
     z-index: 999;
+    padding-top: 0;
   }
 
   @include respond-to('phones') {

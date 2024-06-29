@@ -5,7 +5,7 @@ import EmailFailedPopup from '../Popups/EmailFailedPopup';
 const ContactForm = () => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
-  const [subject, setSubject] = useState('');
+  const [subject, setSubject] = useState('Site vitrine');
   const [companyName, setCompanyName] = useState('');
   const [userMessage, setUserMessage] = useState('');
   const [submittingForm, setSubmittingForm] = useState(false);
@@ -107,7 +107,6 @@ const ContactForm = () => {
           onChange={(e) => setSubject(e.target.value)}
           required
         >
-          <option value=""></option>
           <option value="Site-vitrine">Site vitrine</option>
           <option value="Site-e-commerce">Site e-commerce</option>
           <option value="Autre">Autre</option>

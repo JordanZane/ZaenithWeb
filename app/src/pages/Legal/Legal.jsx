@@ -120,12 +120,7 @@ const Legal = ({ handleHideLegalPage }) => {
                 créés par d’autres sites vers{' '}
                 <a href="https://zaenithweb.fr/">https://zaenithweb.fr/</a>.
               </p>
-              <p>
-                La navigation sur le site{' '}
-                <a href="https://zaenithweb.fr/">https://zaenithweb.fr/</a> est
-                susceptible de provoquer l’installation de cookie(s) sur
-                l’ordinateur de l’utilisateur.
-              </p>
+
               <p>
                 Le site web{' '}
                 <a href="https://zaenithweb.fr/">https://zaenithweb.fr/</a> ne

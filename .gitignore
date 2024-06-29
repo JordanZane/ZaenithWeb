@@ -1,5 +1,6 @@
 .prettierrc.json
 server/.env
+app/.env
 # dependencies
 /node_modules
 /.pnp

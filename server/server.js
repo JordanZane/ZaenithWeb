@@ -1,9 +1,9 @@
+require('dotenv').config({ path: '/root/var/www/apiFreelance/.env' }); 
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const validator = require('validator');
-require('dotenv').config();
 
 
 const app = express();
@@ -27,9 +27,11 @@ app.use(
       user: process.env.IONOS_EMAIL,
       pass: process.env.IONOS_PASSWORD,
     },
+    authMethod: 'PLAIN',
+
   });
 
-  app.post('/send-email', async (req, res) => {
+  app.post('/apiFreelance/send-email', async (req, res) => {
     try {
       const { userName, userEmail, companyName, subject, userMessage } =
         req.body;
@@ -57,11 +59,15 @@ app.use(
       res.setHeader('Content-Type', 'application/json');
       res.status(200).send('E-mail envoyé avec succès');
     } catch (error) {
-      console.error("Erreur lors de l'envoi de l'e-mail :", error.message);
+      console.error("Erreur lors de l'envoi de l'e-mail :", error);
+      console.log('mes identifiant', process.env.NODE_MAILER_USERNAME);
       res.setHeader('Content-Type', 'application/json');
       res
         .status(500)
-        .send("Erreur lors de l'envoi de l'e-mail : " + error.message);
+        .send("Erreur lors de l'envoi de l'e-mail : " + error);
+        console.log('identifiants : ', process.env.NODE_MAILER_USERNAME);
+
+
     }
   });
 
